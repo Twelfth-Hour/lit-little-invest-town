@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "build/",
+    "rootDir": "src/",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["src/types"]
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "./test/globalSetup.ts",
+    "./test/globalTeardown.ts"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Monolith API for LIT",
+  "main": "index.js",
+  "repository": "https://github.com/Twelfth-Hour/lit-little-invest-town",
+  "author": "Sahil Bondre <sahilbondre@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node build/index.js",
+    "lint": "eslint . --fix && prettier --write .",
+    "dev": "tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.7.0",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.0.1",
+    "eslint-plugin-jest": "^25.2.2",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1"
+  }
+}
