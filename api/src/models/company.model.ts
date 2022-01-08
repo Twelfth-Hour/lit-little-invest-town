@@ -1,5 +1,7 @@
 import {
   DataTypes,
+  HasManyAddAssociationMixin,
+  HasManyGetAssociationsMixin,
   // HasOneGetAssociationMixin,
   // HasOneSetAssociationMixin,
   Model,
@@ -7,6 +9,7 @@ import {
 } from "sequelize";
 import { CompanyDAO } from "../dao/company.dao";
 import sequelize from "../db";
+import BalanceSheet from "./balance_sheet.model";
 
 interface CompanyAttributes {
   id: number;
@@ -36,6 +39,9 @@ class Company
 
   public readonly createdAt!: Date;
   public readonly updatedAt!: Date;
+
+  public getBalanceSheets!: HasManyGetAssociationsMixin<BalanceSheet>;
+  public addBalanceSheet!: HasManyAddAssociationMixin<BalanceSheet, number>;
 
   public toDAO(): CompanyDAO {
     return {
@@ -85,5 +91,8 @@ Company.init(
     modelName: "company",
   }
 );
+
+Company.hasMany(BalanceSheet);
+BalanceSheet.belongsTo(Company);
 
 export default Company;
