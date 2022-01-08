@@ -88,3 +88,8 @@
   font-size: 1.75rem;
   font-weight: 600;
 }
+
+.company_sec {
+  align-items: center;
+  margin-bottom: 1rem;
+}

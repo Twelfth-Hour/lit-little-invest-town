@@ -62,7 +62,7 @@ export default function Home() {
               />
             </Col>
             <Col>
-              <span className={styles.imageHeading}>Coffee @ 200Rs 🥵</span>
+              <span className={styles.imageHeading}>Coffee @ 200 Rs 🥵</span>
             </Col>
           </Row>
           <Row style={{ alignItems: "center" }}>
@@ -100,37 +100,21 @@ export default function Home() {
           </Row>
           <br />
           <Row className={styles.text}>
-            <span>
-              <img
-                src="/pointer.svg"
-                alt="pointer"
-                style={{ width: "1.5rem" }}
-              />{" "}
+            <span style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>
+            📌 &nbsp;
               LIT scales down company profile to a personal level
             </span>
-            <span>
-              <img
-                src="/pointer.svg"
-                alt="pointer"
-                style={{ width: "1.5rem" }}
-              />{" "}
+            <span style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>
+            📌 &nbsp;
               Each company is represented by a character with similar finances
             </span>
-            <span>
-              <img
-                src="/pointer.svg"
-                alt="pointer"
-                style={{ width: "1.5rem" }}
-              />{" "}
+            <span style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>
+            📌 &nbsp;
               LIT flattens the learning curve to understand company portfolios
               by converting complex financial jargon into simple everyday words
             </span>
-            <span>
-              <img
-                src="/pointer.svg"
-                alt="pointer"
-                style={{ width: "1.5rem" }}
-              />{" "}
+            <span style={{ fontSize: "1.25rem", marginBottom: "0.75rem" }}>
+            📌 &nbsp;
               LIT simplifies decision making while buying shares for people with
               a non-finance background
             </span>
@@ -145,12 +129,19 @@ export default function Home() {
             of the stock market
           </span>
         </Row>
-        <Row>
-          <img
-            src="/company.png"
-            alt="companies logo"
-            className={styles.company_logo_img}
-          />
+        <Row className={styles.company_sec}>
+          <Col><img src="/reliance.png" alt="reliance" style={{ width: "120px" }}/></Col>
+          <Col><img src="/hdfc.png" alt="hdfc" style={{ width: "85px" }}/></Col>
+          <Col><img src="/wipro.png" alt="wipro" style={{ width: "120px" }}/></Col>
+          <Col><img src="/tcs.png" alt="tcs" style={{ width: "120px" }}/></Col>
+          <Col><img src="/infosys.png" alt="infosys" style={{ width: "120px" }}/></Col>
+        </Row>
+        <Row className={styles.company_sec}>
+          <Col><img src="/kotak.png" alt="kotak" style={{ width: "120px" }}/></Col>
+          <Col><img src="/asian_paints.png" alt="asian paints" style={{ width: "120px" }}/></Col>
+          <Col><img src="/airtel.svg" alt="airtel" style={{ width: "85px" }}/></Col>
+          <Col><img src="/maruti.png" alt="maruti suzuki" style={{ width: "120px" }}/></Col>
+          <Col><img src="/whirpool.png" alt="whirpool" style={{ width: "120px" }}/></Col>
         </Row>
       </Col>
     </div>
