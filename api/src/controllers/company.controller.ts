@@ -3,6 +3,8 @@ import Company from "../models/company.model";
 import {
   getAllCompaniesService,
   getCompaniesByRisk,
+  getCompanyBySymbol,
+  getSimilarCompaniesService,
 } from "../services/company.service";
 
 export const getAllCompanies: RequestHandler = async (
@@ -34,4 +36,20 @@ export const getAllCompanies: RequestHandler = async (
   }
 
   res.status(200).send(companies.map((company) => company.toDAO()));
+};
+
+export const getSimilarCompanies: RequestHandler<{
+  symbol: string;
+}> = async (req: Request<{ symbol: string }>, res: Response) => {
+  const symbol = req.params.symbol;
+  const company = await getCompanyBySymbol(symbol);
+  if (!company) {
+    res.status(404).send("Company not found");
+    return;
+  }
+
+  const sector = company.sector;
+  const similarCompanies = await getSimilarCompaniesService(sector, symbol);
+
+  res.status(200).send(similarCompanies.map((company) => company.toDAO()));
 };
