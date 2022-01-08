@@ -1,0 +1,446 @@
+id,name,symbol,url,sector,sub_sector,market_cap,risk
+1,Reliance Industries Limited,RELIANCE,https://tickertape.in/stocks/reliance-industries-RELI,Energy,Oil & Gas - Refining & Marketing,1638328,Low
+2,Tata Consultancy Services Limited,TCS,https://tickertape.in/stocks/tata-consultancy-services-TCS,Information Technology,IT Services & Consulting,1436988,Low
+3,HDFC Bank Limited,HDFCBANK,https://tickertape.in/stocks/hdfc-bank-HDBK,Financials,Private Banks,847183,Low
+4,Infosys Limited,INFY,https://tickertape.in/stocks/infosys-INFY,Information Technology,IT Services & Consulting,795891,Low
+5,Hindustan Unilever Limited,HINDUNILVR,https://tickertape.in/stocks/hindustan-unilever-HLL,Consumer Staples,FMCG - Household Products,564195,Low
+6,Housing Development Finance Corporation Limited,HDFC,https://tickertape.in/stocks/housing-development-finance-corporation-HDFC,Financials,Home Financing,484499,Low
+7,ICICI Bank Limited,ICICIBANK,https://tickertape.in/stocks/icici-bank-ICBK,Financials,Private Banks,536616,Low
+8,Kotak Mahindra Bank Limited,KOTAKBANK,https://tickertape.in/stocks/kotak-mahindra-bank-KTKM,Financials,Private Banks,367987,Low
+9,State Bank of India,SBIN,https://tickertape.in/stocks/state-bank-of-india-SBI,Financials,Public Banks,431504,Moderate
+10,Bajaj Finance Limited,BAJFINANCE,https://tickertape.in/stocks/bajaj-finance-BJFN,Financials,Consumer Finance,442450,Moderate
+11,Bharti Airtel Limited,BHARTIARTL,https://tickertape.in/stocks/bharti-airtel-BRTI,Communication Services,Telecom Services,451725,Low
+12,ITC Limited,ITC,https://tickertape.in/stocks/itc-ITC,Consumer Staples,FMCG - Tobacco,271406,Low
+13,HCL Technologies Limited,HCLTECH,https://tickertape.in/stocks/hcl-technologies-HCLT,Information Technology,IT Services & Consulting,361853,Low
+14,Asian Paints Limited,ASIANPAINT,https://tickertape.in/stocks/asian-paints-ASPN,Materials,Paints,331738,Low
+15,Wipro Limited,WIPRO,https://tickertape.in/stocks/wipro-WIPR,Information Technology,IT Services & Consulting,394215,Low
+16,Axis Bank Limited,AXISBANK,https://tickertape.in/stocks/axis-bank-AXBK,Financials,Private Banks,217543,Low
+17,Maruti Suzuki India Limited,MARUTI,https://tickertape.in/stocks/maruti-suzuki-india-MRTI,Consumer Discretionary,Four Wheelers,230490,Low
+18,Larsen & Toubro Limited,LT,https://tickertape.in/stocks/larsen-and-toubro-LART,Industrials,Construction & Engineering,272194,Low
+19,UltraTech Cement Limited,ULTRACEMCO,https://tickertape.in/stocks/ultratech-cement-ULTC,Materials,Cement,220694,Low
+20,Avenue Supermarts Limited,DMART,https://tickertape.in/stocks/avenue-supermarts-AVEU,Consumer Discretionary,Retail - Department Stores,306204,Moderate
+21,Adani Green Energy Limited,ADANIGREEN,https://tickertape.in/stocks/adani-green-energy-ADNA,Utilities,Renewable Energy,213753,Moderate
+22,Bajaj Finserv Limited,BAJAJFINSV,https://tickertape.in/stocks/bajaj-finserv-BJFS,Financials,Insurance,272328,Moderate
+23,Sun Pharmaceutical Industries Limited,SUNPHARMA,https://tickertape.in/stocks/sun-pharmaceutical-industries-SUN,Health Care,Pharmaceuticals,200992,Low
+24,Adani Ports and Special Economic Zone Limited,ADANIPORTS,https://tickertape.in/stocks/adani-ports-and-special-economic-zone-APSE,Industrials,Ports,150936,Moderate
+25,HDFC Life Insurance Company Limited,HDFCLIFE,https://tickertape.in/stocks/hdfc-life-insurance-company-HDFL,Financials,Insurance,137933,Low
+26,Titan Company Limited,TITAN,https://tickertape.in/stocks/titan-company-TITN,Consumer Discretionary,"Precious Metals, Jewellery & Watches",229315,Low
+27,Oil & Natural Gas Corporation Limited,ONGC,https://tickertape.in/stocks/oil-and-natural-gas-corporation-ONGC,Energy,Oil & Gas - Exploration & Production,185936,Moderate
+28,Hindustan Zinc Limited,HINDZINC,https://tickertape.in/stocks/hindustan-zinc-HZNC,Materials,Mining - Diversified,139667,Moderate
+29,Adani Enterprises Limited,ADANIENT,https://tickertape.in/stocks/adani-enterprises-ADEL,Industrials,Commodities Trading,189057,Moderate
+30,JSW Steel Limited,JSWSTEEL,https://tickertape.in/stocks/jsw-steel-JSTL,Materials,Iron & Steel,161447,Moderate
+31,Power Grid Corporation of India Limited,POWERGRID,https://tickertape.in/stocks/power-grid-corporation-of-india-PGRD,Utilities,Power Transmission & Distribution,146903,Low
+32,SHREE CEMENT LIMITED,SHREECEM,https://tickertape.in/stocks/shree-cement-SHCM,Materials,Cement,97252,Low
+33,Bajaj Auto Limited,BAJAJ-AUTO,https://tickertape.in/stocks/bajaj-auto-BAJA,Consumer Discretionary,Two Wheelers,95177,Low
+34,Adani Total Gas Limited,ATGL,https://tickertape.in/stocks/adani-gas-ADAG,Utilities,Gas Distribution,192901,High
+35,NTPC Limited,NTPC,https://tickertape.in/stocks/ntpc-NTPC,Utilities,Power Generation,128868,Low
+36,Tata Motors Limited,TATAMOTORS,https://tickertape.in/stocks/tata-motors-TAMO,Consumer Discretionary,Four Wheelers,175007,High
+37,Adani Transmission Limited,ADANITRANS,https://tickertape.in/stocks/adani-transmission-ADAI,Utilities,Power Infrastructure,193011,High
+38,Mahindra & Mahindra Limited,M&M,https://tickertape.in/stocks/mahindra-and-mahindra-MAHM,Consumer Discretionary,Four Wheelers,99332,Low
+39,Divi's Laboratories Limited,DIVISLAB,https://tickertape.in/stocks/divis-laboratories-DIVI,Health Care,Labs & Life Sciences Services,122691,Low
+40,Tech Mahindra Limited,TECHM,https://tickertape.in/stocks/tech-mahindra-TEML,Information Technology,IT Services & Consulting,173705,Low
+41,Dabur India Limited,DABUR,https://tickertape.in/stocks/dabur-india-DABU,Consumer Staples,FMCG - Personal Products,101483,Low
+42,Grasim Industries Limited,GRASIM,https://tickertape.in/stocks/grasim-industries-GRAS,Materials,Cement,111097,Low
+43,Bharat Petroleum Corporation Limited,BPCL,https://tickertape.in/stocks/bharat-petroleum-corporation-BPCL,Energy,Oil & Gas - Refining & Marketing,83458,Low
+44,Pidilite Industries Limited,PIDILITIND,https://tickertape.in/stocks/pidilite-industries-PIDI,Materials,Diversified Chemicals,132080,Low
+45,Tata Steel Limited,TATASTEEL,https://tickertape.in/stocks/tata-steel-TISC,Materials,Iron & Steel,138292,Moderate
+46,SBI Life Insurance Company Limited,SBILIFE,https://tickertape.in/stocks/sbi-life-insurance-company-SBIL,Financials,Insurance,122094,Low
+47,Britannia Industries Limited,BRITANNIA,https://tickertape.in/stocks/britannia-industries-BRIT,Consumer Staples,FMCG - Foods,87638,Low
+48,SBI Cards and Payment Services Limited,SBICARD,https://tickertape.in/stocks/sbi-cards-and-payment-services-SBIC,Financials,Payment Infrastructure,88131,Moderate
+49,Indian Oil Corporation Limited,IOC,https://tickertape.in/stocks/indian-oil-corporation-IOC,Energy,Oil & Gas - Refining & Marketing,107368,Low
+50,Vedanta Limited,VEDL,https://tickertape.in/stocks/vedanta-VDAN,Materials,Metals - Diversified,124221,Moderate
+51,Coal India Limited,COALINDIA,https://tickertape.in/stocks/coal-india-COAL,Materials,Mining - Coal,94289,Moderate
+52,Dr. Reddy's Laboratories Limited,DRREDDY,https://tickertape.in/stocks/drreddys-laboratories-REDY,Health Care,Pharmaceuticals,80235,Low
+53,Godrej Consumer Products Limited,GODREJCP,https://tickertape.in/stocks/godrej-consumer-products-GOCP,Consumer Staples,FMCG - Personal Products,97114,Moderate
+54,Berger Paints (I) Limited,BERGEPAINT,https://tickertape.in/stocks/berger-paints-india-BRGR,Materials,Paints,76193,Low
+55,IndusInd Bank Limited,INDUSINDBK,https://tickertape.in/stocks/indusind-bank-INBK,Financials,Private Banks,70050,Moderate
+56,Hindalco Industries Limited,HINDALCO,https://tickertape.in/stocks/hindalco-industries-HALC,Materials,Metals - Aluminium,106676,Moderate
+57,Eicher Motors Limited,EICHERMOT,https://tickertape.in/stocks/eicher-motors-EICH,Industrials,Trucks & Buses,73957,Low
+58,DLF Limited,DLF,https://tickertape.in/stocks/dlf-DLF,Real Estate,Real Estate,97941,Moderate
+59,Larsen & Toubro Infotech Limited,LTI,https://tickertape.in/stocks/larsen-and-toubro-infotech-LRTI,Information Technology,IT Services & Consulting,132499,Moderate
+60,Indus Towers Limited,INDUSTOWER,https://tickertape.in/stocks/bharti-infratel-BHRI,Communication Services,Telecom Infrastructure,68749,Moderate
+61,Havells India Limited,HAVELLS,https://tickertape.in/stocks/havells-india-HVEL,Industrials,Electrical Components & Equipments,87757,Moderate
+62,Cipla Limited,CIPLA,https://tickertape.in/stocks/cipla-CIPL,Health Care,Pharmaceuticals,74567,Low
+63,Siemens Limited,SIEMENS,https://tickertape.in/stocks/siemens-SIEM,Industrials,Conglomerates,83948,Low
+64,ICICI Lombard General Insurance Company Limited,ICICIGI,https://tickertape.in/stocks/icici-lombard-general-insurance-company-ICIL,Financials,Insurance,69871,Low
+65,ICICI Prudential Life Insurance Company Limited,ICICIPRULI,https://tickertape.in/stocks/icici-prudential-life-insurance-company-ICIR,Financials,Insurance,82061,Low
+66,Motherson Sumi Systems Limited,MOTHERSUMI,https://tickertape.in/stocks/motherson-sumi-systems-MOSS,Consumer Discretionary,Auto Parts,70990,Moderate
+67,InterGlobe Aviation Limited,INDIGO,https://tickertape.in/stocks/interglobe-aviation-INGL,Industrials,Airlines,78644,Moderate
+68,HDFC Asset Management Company Limited,HDFCAMC,https://tickertape.in/stocks/hdfc-asset-management-company-HDFA,Financials,Asset Management,52783,Low
+69,Ambuja Cements Limited,AMBUJACEM,https://tickertape.in/stocks/ambuja-cements-ABUJ,Materials,Cement,77529,Low
+70,GAIL (India) Limited,GAIL,https://tickertape.in/stocks/gail-india-GAIL,Utilities,Gas Distribution,58968,Moderate
+71,TATA CONSUMER PRODUCTS LIMITED,TATACONSUM,https://tickertape.in/stocks/tata-consumer-products-TACN,Consumer Staples,Tea & Coffee,68088,Low
+72,Hero MotoCorp Limited,HEROMOTOCO,https://tickertape.in/stocks/hero-motocorp-HROM,Consumer Discretionary,Two Wheelers,49649,Low
+73,Info Edge (India) Limited,NAUKRI,https://tickertape.in/stocks/info-edge-india-INED,Communication Services,Online Services,72158,Moderate
+74,Bandhan Bank Limited,BANDHANBNK,https://tickertape.in/stocks/bandhan-bank-BANH,Financials,Private Banks,41000,Moderate
+75,Marico Limited,MARICO,https://tickertape.in/stocks/marico-MRCO,Consumer Staples,FMCG - Personal Products,64820,Low
+76,Aurobindo Pharma Limited,AUROPHARMA,https://tickertape.in/stocks/aurobindo-pharma-ARBN,Health Care,Pharmaceuticals,42319,Low
+77,Biocon Limited,BIOCON,https://tickertape.in/stocks/biocon-BION,Health Care,Biotechnology,43749,Low
+78,UPL Limited,UPL,https://tickertape.in/stocks/upl-UPLL,Materials,Fertilizers & Agro Chemicals,58201,Moderate
+79,Muthoot Finance Limited,MUTHOOTFIN,https://tickertape.in/stocks/muthoot-finance-MUTT,Financials,Consumer Finance,61536,Moderate
+80,Lupin Limited,LUPIN,https://tickertape.in/stocks/lupin-LUPN,Health Care,Pharmaceuticals,42347,Low
+81,Cholamandalam Investment and Finance Company Limited,CHOLAFIN,https://tickertape.in/stocks/cholamandalam-investment-and-finance-company-CHLA,Financials,Consumer Finance,44826,Moderate
+82,Cadila Healthcare Limited,CADILAHC,https://tickertape.in/stocks/cadila-healthcare-CADI,Health Care,Pharmaceuticals,47568,Low
+83,Torrent Pharmaceuticals Limited,TORNTPHARM,https://tickertape.in/stocks/torrent-pharmaceuticals-TORP,Health Care,Pharmaceuticals,54301,Low
+84,Colgate Palmolive (India) Limited,COLPAL,https://tickertape.in/stocks/colgate-palmolive-india-COLG,Consumer Staples,FMCG - Personal Products,39840,Low
+85,Honeywell Automation India Limited,HONAUT,https://tickertape.in/stocks/honeywell-automation-india-HONE,Information Technology,Electronic Equipments,37321,Low
+86,Apollo Hospitals Enterprise Limited,APOLLOHOSP,https://tickertape.in/stocks/apollo-hospitals-enterprise-APLH,Health Care,Hospitals & Diagnostic Centres,71383,Moderate
+87,Bosch Limited,BOSCHLTD,https://tickertape.in/stocks/bosch-BOSH,Consumer Discretionary,Auto Parts,50795,Low
+88,IDBI Bank Limited,IDBI,https://tickertape.in/stocks/idbi-bank-IDBI,Financials,Public Banks,50966,High
+89,Procter & Gamble Hygiene and Health Care Limited,PGHH,https://tickertape.in/stocks/procter-and-gamble-hygiene-and-health-care-PROC,Consumer Staples,FMCG - Personal Products,50263,Low
+90,Gland Pharma Limited,GLAND,https://tickertape.in/stocks/gland-pharma-GLAN,Health Care,Pharmaceuticals,63840,Moderate
+91,United Spirits Limited,MCDOWELL-N,https://tickertape.in/stocks/united-spirits-UNSP,Consumer Staples,Alcoholic Beverages,66149,Low
+92,NMDC Limited,NMDC,https://tickertape.in/stocks/nmdc-NMDC,Materials,Mining - Iron Ore,39797,Moderate
+93,Piramal Enterprises Limited,PEL,https://tickertape.in/stocks/piramal-enterprises-PIRA,Financials,Diversified Financials,63593,Moderate
+94,Godrej Properties Limited,GODREJPROP,https://tickertape.in/stocks/godrej-properties-GODR,Real Estate,Real Estate,52547,Moderate
+95,Yes Bank Limited,YESBANK,https://tickertape.in/stocks/yes-bank-YESB,Financials,Private Banks,36329,Moderate
+96,Jubilant Foodworks Limited,JUBLFOOD,https://tickertape.in/stocks/jubilant-foodworks-JUBI,Consumer Discretionary,Restaurants & Cafes,47570,Moderate
+97,Punjab National Bank,PNB,https://tickertape.in/stocks/punjab-national-bank-PNBK,Financials,Public Banks,42227,Moderate
+98,AU Small Finance Bank Limited,AUBANK,https://tickertape.in/stocks/au-small-finance-bank-AUFI,Financials,Consumer Finance,34385,Moderate
+99,Bank of Baroda,BANKBARODA,https://tickertape.in/stocks/bank-of-baroda-BOB,Financials,Public Banks,43387,Moderate
+100,Gujarat Gas Limited,GUJGASLTD,https://tickertape.in/stocks/gujarat-gas-GGAS,Utilities,Gas Distribution,44717,Moderate
+101,Bajaj Holdings & Investment Limited,BAJAJHLDNG,https://tickertape.in/stocks/bajaj-holdings-and-investment-BJAT,Financials,Asset Management,58910,Low
+102,Container Corporation of India Limited,CONCOR,https://tickertape.in/stocks/container-corporation-of-india-CCRI,Industrials,Logistics,38248,Moderate
+103,Shriram Transport Finance Company Limited,SRTRANSFIN,https://tickertape.in/stocks/shriram-transport-finance-company-SRTR,Financials,Consumer Finance,33894,Moderate
+104,Indraprastha Gas Limited,IGL,https://tickertape.in/stocks/indraprastha-gas-IGAS,Utilities,Gas Distribution,32889,Low
+105,ACC Limited,ACC,https://tickertape.in/stocks/acc-ACC,Materials,Cement,41769,Low
+106,Jindal Steel & Power Limited,JINDALSTEL,https://tickertape.in/stocks/jindal-steel-and-power-JNSP,Materials,Iron & Steel,39599,Moderate
+107,General Insurance Corporation of India,GICRE,https://tickertape.in/stocks/general-insurance-corporation-of-india-GENA,Financials,Insurance,24438,Moderate
+108,MRF Limited,MRF,https://tickertape.in/stocks/mrf-MRF,Consumer Discretionary,Tires & Rubber,31357,Low
+109,Hindustan Petroleum Corporation Limited,HINDPETRO,https://tickertape.in/stocks/hindustan-petroleum-corp-HPCL,Energy,Oil & Gas - Refining & Marketing,42270,Low
+110,MindTree Limited,MINDTREE,https://tickertape.in/stocks/mindtree-MINT,Information Technology,IT Services & Consulting,78739,Moderate
+111,3M India Limited,3MINDIA,https://tickertape.in/stocks/3m-india-TMIN,Industrials,Stationery,28852,Low
+112,PI Industries Limited,PIIND,https://tickertape.in/stocks/pi-industries-PIIL,Materials,Diversified Chemicals,45703,Moderate
+113,Page Industries Limited,PAGEIND,https://tickertape.in/stocks/page-industries-PAGE,Consumer Discretionary,Apparel & Accessories,45686,Moderate
+114,Petronet LNG Limited,PETRONET,https://tickertape.in/stocks/petronet-lng-PLNG,Energy,Oil & Gas - Storage & Transportation,32745,Low
+115,Ashok Leyland Limited,ASHOKLEY,https://tickertape.in/stocks/ashok-leyland-ASOK,Industrials,Trucks & Buses,37398,Moderate
+116,Hindustan Aeronautics Limited,HAL,https://tickertape.in/stocks/hindustan-aeronautics-HIAE,Industrials,Aerospace & Defense Equipments,41751,Moderate
+117,MphasiS Limited,MPHASIS,https://tickertape.in/stocks/mphasis-MBFL,Information Technology,IT Services & Consulting,63662,Moderate
+118,Voltas Limited,VOLTAS,https://tickertape.in/stocks/voltas-VOLT,Consumer Discretionary,Home Electronics & Appliances,41201,Low
+119,Alkem Laboratories Limited,ALKEM,https://tickertape.in/stocks/alkem-laboratories-ALKE,Health Care,Pharmaceuticals,43208,Low
+120,Tata Power Company Limited,TATAPOWER,https://tickertape.in/stocks/tata-power-company-TTPW,Utilities,Power Transmission & Distribution,72310,Moderate
+121,United Breweries Limited,UBL,https://tickertape.in/stocks/united-breweries-UBBW,Consumer Staples,Alcoholic Beverages,41568,Low
+122,Adani Power Limited,ADANIPOWER,https://tickertape.in/stocks/adani-power-ADAN,Utilities,Power Generation,38781,High
+123,Balkrishna Industries Limited,BALKRISIND,https://tickertape.in/stocks/balkrishna-industries-BLKI,Consumer Discretionary,Tires & Rubber,44711,Low
+124,Steel Authority of India Limited,SAIL,https://tickertape.in/stocks/steel-authority-of-india-SAIL,Materials,Iron & Steel,45373,High
+125,Astral Poly Technik Limited,ASTRAL,https://tickertape.in/stocks/astral-poly-technik-ASPT,Industrials,Building Products - Pipes,48150,Moderate
+126,Kansai Nerolac Paints Limited,KANSAINER,https://tickertape.in/stocks/kansai-nerolac-paints-KANE,Materials,Paints,31898,Low
+127,SRF Limited,SRF,https://tickertape.in/stocks/srf-SRFL,Consumer Discretionary,Textiles,72008,Moderate
+128,IDFC First Bank Limited,IDFCFIRSTB,https://tickertape.in/stocks/idfc-first-bank-IDFB,Financials,Private Banks,30634,Moderate
+129,Bharat Electronics Limited,BEL,https://tickertape.in/stocks/bharat-electronics-BAJE,Information Technology,Electronic Equipments,52666,Moderate
+130,Tata Communications Limited,TATACOMM,https://tickertape.in/stocks/tata-communications-TATA,Communication Services,Telecom Services,40504,Moderate
+131,Power Finance Corporation Limited,PFC,https://tickertape.in/stocks/power-finance-corporation-PWFC,Financials,Specialized Finance,32565,Moderate
+132,Indian Railway Finance Corporation Limited,IRFC,https://tickertape.in/stocks/indian-railway-finance-corporation-IRF,Financials,Specialized Finance,30122,Low
+133,ABB India Limited,ABB,https://tickertape.in/stocks/abb-india-ABB,Industrials,Heavy Electrical Equipments,47038,Moderate
+134,Dalmia Bharat Limited,DALBHARAT,https://tickertape.in/stocks/dalmia-bharat-DALB,Materials,Cement,35116,Moderate
+135,Max Financial Services Limited,MFSL,https://tickertape.in/stocks/max-financial-services-MAXI,Financials,Insurance,35448,Low
+136,Varun Beverages Limited,VBL,https://tickertape.in/stocks/varun-beverages-VARB,Consumer Staples,Soft Drinks,37886,Moderate
+137,Aditya Birla Capital Limited,ABCAPITAL,https://tickertape.in/stocks/aditya-birla-capital-ADTB,Financials,Diversified Financials,31628,Moderate
+138,Sundaram Finance Limited,SUNDARMFIN,https://tickertape.in/stocks/sundaram-finance-SNFN,Financials,Consumer Finance,26559,Moderate
+139,Whirlpool of India Limited,WHIRLPOOL,https://tickertape.in/stocks/whirlpool-of-india-WHIR,Consumer Discretionary,Home Electronics & Appliances,22607,Low
+140,Indian Railway Catering And Tourism Corporation Limited,IRCTC,https://tickertape.in/stocks/indian-railway-catering-and-tourism-corporation-INIR,Communication Services,Online Services,67844,High
+141,L&T Technology Services Limited,LTTS,https://tickertape.in/stocks/landt-technology-services-LTEH,Information Technology,Software Services,62408,Moderate
+142,TVS Motor Company Limited,TVSMOTOR,https://tickertape.in/stocks/tvs-motor-company-TVSM,Consumer Discretionary,Two Wheelers,29951,Moderate
+143,Bharat Forge Limited,BHARATFORG,https://tickertape.in/stocks/bharat-forge-BFRG,Materials,Iron & Steel,33382,Moderate
+144,Oracle Financial Services Software Limited,OFSS,https://tickertape.in/stocks/oracle-financial-services-software-ORCL,Information Technology,Software Services,35229,Low
+145,Trent Limited,TRENT,https://tickertape.in/stocks/trent-TREN,Consumer Discretionary,Retail - Apparel,37537,Moderate
+146,Vodafone Idea Limited,IDEA,https://tickertape.in/stocks/vodafone-idea-VODA,Communication Services,Telecom Services,43821,High
+147,Indian Overseas Bank,IOB,https://tickertape.in/stocks/indian-overseas-bank-IOBK,Financials,Public Banks,38749,High
+148,Supreme Industries Limited,SUPREMEIND,https://tickertape.in/stocks/supreme-industries-SUPI,Materials,Plastic Products,28279,Low
+149,REC Limited,RECLTD,https://tickertape.in/stocks/rec-RECM,Financials,Specialized Finance,26898,Moderate
+150,Cummins India Limited,CUMMINSIND,https://tickertape.in/stocks/cummins-india-CUMM,Industrials,Industrial Machinery,26318,Moderate
+151,The New India Assurance Company Limited,NIACL,https://tickertape.in/stocks/new-india-assurance-company-THEE,Financials,Insurance,23104,High
+152,Canara Bank,CANBK,https://tickertape.in/stocks/canara-bank-CNBK,Financials,Public Banks,37470,Moderate
+153,Crompton Greaves Consumer Electricals Limited,CROMPTON,https://tickertape.in/stocks/crompton-greaves-consumer-electricals-CROP,Consumer Discretionary,Home Electronics & Appliances,27385,Moderate
+154,Mahindra & Mahindra Financial Services Limited,M&MFIN,https://tickertape.in/stocks/mahindra-and-mahindra-financial-services-MMFS,Financials,Consumer Finance,18850,Moderate
+155,NHPC Limited,NHPC,https://tickertape.in/stocks/nhpc-NHPC,Utilities,Renewable Energy,31491,Moderate
+156,GlaxoSmithKline Pharmaceuticals Limited,GLAXO,https://tickertape.in/stocks/glaxosmithkline-pharmaceuticals-GLAX,Health Care,Pharmaceuticals,29375,Low
+157,IPCA Laboratories Limited,IPCALAB,https://tickertape.in/stocks/ipca-laboratories-IPCA,Health Care,Pharmaceuticals,27546,Low
+158,L&T Finance Holdings Limited,L&TFH,https://tickertape.in/stocks/landt-finance-holdings-LTFH,Financials,Diversified Financials,19568,Moderate
+159,The Ramco Cements Limited,RAMCOCEM,https://tickertape.in/stocks/ramco-cements-TRCE,Materials,Cement,24205,Low
+160,Indiamart Intermesh Limited,INDIAMART,https://tickertape.in/stocks/indiamart-intermesh-INMR,Communication Services,Online Services,20065,Moderate
+161,Tube Investments of India Limited,TIINDIA,https://tickertape.in/stocks/tube-investments-of-india-TBEI,Consumer Discretionary,Cycles,38098,Moderate
+162,Aarti Industries Limited,AARTIIND,https://tickertape.in/stocks/aarti-industries-ARTI,Materials,Specialty Chemicals,35960,Moderate
+163,Coromandel International Limited,COROMANDEL,https://tickertape.in/stocks/coromandel-international-CORF,Materials,Fertilizers & Agro Chemicals,22596,Low
+164,Deepak Nitrite Limited,DEEPAKNTR,https://tickertape.in/stocks/deepak-nitrite-DPNT,Materials,Commodity Chemicals,34283,Moderate
+165,Dr. Lal Path Labs Ltd.,LALPATHLAB,https://tickertape.in/stocks/dr-lal-pathlabs-DLPA,Health Care,Hospitals & Diagnostic Centres,31675,Moderate
+166,JK Cement Limited,JKCEMENT,https://tickertape.in/stocks/j-k-cement-JKCE,Materials,Cement,27245,Moderate
+167,Bank of India,BANKINDIA,https://tickertape.in/stocks/bank-of-india-BOI,Financials,Public Banks,21728,High
+168,Union Bank of India,UNIONBANK,https://tickertape.in/stocks/union-bank-of-india-UNBK,Financials,Public Banks,30312,Moderate
+169,Relaxo Footwears Limited,RELAXO,https://tickertape.in/stocks/relaxo-footwears-RLXO,Consumer Discretionary,Footwear,33149,Low
+170,Syngene International Limited,SYNGENE,https://tickertape.in/stocks/syngene-international-SYNN,Health Care,Labs & Life Sciences Services,24548,Low
+171,LIC Housing Finance Limited,LICHSGFIN,https://tickertape.in/stocks/lic-housing-finance-LICH,Financials,Home Financing,20858,Moderate
+172,Emami Limited,EMAMILTD,https://tickertape.in/stocks/emami-EMAM,Consumer Staples,FMCG - Personal Products,22888,Low
+173,Dixon Technologies (India) Limited,DIXON,https://tickertape.in/stocks/dixon-technologies-india-DIXO,Consumer Discretionary,Home Electronics & Appliances,32160,Moderate
+174,Atul Limited,ATUL,https://tickertape.in/stocks/atul-ATLP,Materials,Diversified Chemicals,27521,Low
+175,Oberoi Realty Limited,OBEROIRLTY,https://tickertape.in/stocks/oberoi-realty-OEBO,Real Estate,Real Estate,32578,Moderate
+176,Nippon Life India Asset Management Limited,NAM-INDIA,https://tickertape.in/stocks/nippon-life-india-asset-management-NIPF,Financials,Asset Management,22136,Low
+177,Pfizer Limited,PFIZER,https://tickertape.in/stocks/pfizer-PFIZ,Health Care,Pharmaceuticals,23169,Low
+178,Polycab India Limited,POLYCAB,https://tickertape.in/stocks/polycab-india-POLC,Industrials,Electrical Components & Equipments,36860,Moderate
+179,Endurance Technologies Limited,ENDURANCE,https://tickertape.in/stocks/endurance-technologies-cn-ENDU,Consumer Discretionary,Auto Parts,24042,Low
+180,Torrent Power Limited,TORNTPOWER,https://tickertape.in/stocks/torrent-power-TOPO,Utilities,Power Transmission & Distribution,27423,Moderate
+181,Max Healthcare Institute Limited,MAXHEALTH,https://tickertape.in/stocks/max-healthcare-institute-MAXE,Health Care,Hospitals & Diagnostic Centres,41571,Moderate
+182,Zee Entertainment Enterprises Limited,ZEEL,https://tickertape.in/stocks/zee-entertainment-enterprises-ZEE,Communication Services,TV Channels & Broadcasters,30962,High
+183,Laurus Labs Limited,LAURUSLABS,https://tickertape.in/stocks/laurus-labs-LAUL,Health Care,Pharmaceuticals,27891,Moderate
+184,AIA Engineering Limited,AIAENG,https://tickertape.in/stocks/aia-engineering-AIAE,Industrials,Industrial Machinery,17417,Low
+185,Gillette India Limited,GILLETTE,https://tickertape.in/stocks/gillette-india-GILE,Consumer Staples,FMCG - Personal Products,17186,Low
+186,Tata Chemicals Limited,TATACHEM,https://tickertape.in/stocks/tata-chemicals-TTCH,Materials,Diversified Chemicals,23159,Moderate
+187,Aavas Financiers Limited,AAVAS,https://tickertape.in/stocks/aavas-financiers-AVAS,Financials,Home Financing,21872,Moderate
+188,Ruchi Soya Industries Limited,RUCHI,https://tickertape.in/stocks/ruchi-soya-industries-RCSY,Consumer Staples,Packaged Foods & Meats,25347,Moderate
+189,Alembic Pharmaceuticals Limited,APLLTD,https://tickertape.in/stocks/alembic-pharmaceuticals-ALEM,Health Care,Pharmaceuticals,16535,Low
+190,Sun TV Network Limited,SUNTV,https://tickertape.in/stocks/sun-tv-network-SUTV,Communication Services,TV Channels & Broadcasters,19836,Moderate
+191,Godrej Industries Limited,GODREJIND,https://tickertape.in/stocks/godrej-industries-GODI,Materials,Diversified Chemicals,21130,Low
+192,Sanofi India Limited,SANOFI,https://tickertape.in/stocks/sanofi-india-SANO,Health Care,Pharmaceuticals,17728,Low
+193,Bata India Limited,BATAINDIA,https://tickertape.in/stocks/bata-india-BATA,Consumer Discretionary,Footwear,23720,Low
+194,Coforge Limited,COFORGE,https://tickertape.in/stocks/coforge-COFO,Information Technology,IT Services & Consulting,37170,Moderate
+195,APL Apollo Tubes Limited,APLAPOLLO,https://tickertape.in/stocks/apl-apollo-tubes-APLA,Industrials,Building Products - Pipes,23715,Moderate
+196,Escorts Limited,ESCORTS,https://tickertape.in/stocks/escorts-ESCO,Industrials,Tractors,25003,Low
+197,Aditya Birla Fashion and Retail Limited,ABFRL,https://tickertape.in/stocks/aditya-birla-fashion-and-retail-ADIA,Consumer Discretionary,Retail - Apparel,26851,Moderate
+198,Schaeffler India Limited,SCHAEFFLER,https://tickertape.in/stocks/schaeffler-india-SCHE,Consumer Discretionary,Auto Parts,29066,Low
+199,Bharat Heavy Electricals Limited,BHEL,https://tickertape.in/stocks/bharat-heavy-electricals-BHEL,Industrials,Heavy Electrical Equipments,20909,High
+200,Sundram Fasteners Limited,SUNDRMFAST,https://tickertape.in/stocks/sundram-fasteners-SNFS,Consumer Discretionary,Auto Parts,18801,Moderate
+201,Tata Elxsi Limited,TATAELXSI,https://tickertape.in/stocks/tata-elxsi-TTEX,Information Technology,Software Services,37227,Moderate
+202,Thermax Limited,THERMAX,https://tickertape.in/stocks/thermax-THMX,Industrials,Industrial Machinery,21505,Moderate
+203,Hatsun Agro Product Limited,HATSUN,https://tickertape.in/stocks/hatsun-agro-product-HAPL,Consumer Staples,FMCG - Foods,27074,Moderate
+204,Exide Industries Limited,EXIDEIND,https://tickertape.in/stocks/exide-industries-EXID,Industrials,Batteries,14454,Low
+205,Ajanta Pharma Limited,AJANTPHARM,https://tickertape.in/stocks/ajanta-pharma-AJPH,Health Care,Pharmaceuticals,19152,Low
+206,Gujarat State Petronet Limited,GSPL,https://tickertape.in/stocks/gujarat-state-petronet-GSPT,Utilities,Gas Distribution,16915,Moderate
+207,Linde India Limited,LINDEINDIA,https://tickertape.in/stocks/linde-india-LIND,Materials,Commodity Chemicals,21562,Moderate
+208,The Federal Bank  Limited,FEDERALBNK,https://tickertape.in/stocks/federal-bank-FED,Financials,Private Banks,18602,Moderate
+209,Natco Pharma Limited,NATCOPHARM,https://tickertape.in/stocks/natco-pharma-NATP,Health Care,Pharmaceuticals,16681,Low
+210,Fortis Healthcare Limited,FORTIS,https://tickertape.in/stocks/fortis-healthcare-FOHE,Health Care,Hospitals & Diagnostic Centres,22969,Moderate
+211,Kajaria Ceramics Limited,KAJARIACER,https://tickertape.in/stocks/kajaria-ceramics-KAJR,Industrials,Building Products - Ceramics,20855,Low
+212,Minda Industries Limited,MINDAIND,https://tickertape.in/stocks/minda-industries-MNDA,Consumer Discretionary,Auto Parts,33059,Moderate
+213,Persistent Systems Limited,PERSISTENT,https://tickertape.in/stocks/persistent-systems-PERS,Information Technology,Software Services,36963,Moderate
+214,GMR Infrastructure Limited,GMRINFRA,https://tickertape.in/stocks/gmr-infrastructure-GMRI,Industrials,Construction & Engineering,29093,Moderate
+215,Amara Raja Batteries Limited,AMARAJABAT,https://tickertape.in/stocks/amara-raja-batteries-AMAR,Industrials,Batteries,10871,Low
+216,Sumitomo Chemical India Limited,SUMICHEM,https://tickertape.in/stocks/sumitomo-chemical-india-SUMH,Materials,Commodity Chemicals,19202,Moderate
+217,JSW Energy Limited,JSWENERGY,https://tickertape.in/stocks/jsw-energy-JSWE,Utilities,Power Generation,49731,High
+218,Vinati Organics Limited,VINATIORGA,https://tickertape.in/stocks/vinati-organics-VNTI,Materials,Specialty Chemicals,21310,Moderate
+219,Apollo Tyres Limited,APOLLOTYRE,https://tickertape.in/stocks/apollo-tyres-APLO,Consumer Discretionary,Tires & Rubber,14327,Moderate
+220,Rajesh Exports Limited,RAJESHEXPO,https://tickertape.in/stocks/rajesh-exports-REXP,Consumer Discretionary,"Precious Metals, Jewellery & Watches",23874,Moderate
+221,Affle (India) Limited,AFFLE,https://tickertape.in/stocks/affle-india-AFFL,Communication Services,Advertising,17554,Moderate
+222,Bank of Maharashtra,MAHABANK,https://tickertape.in/stocks/bank-of-maharashtra-BMBK,Financials,Public Banks,13595,High
+223,Navin Fluorine International Limited,NAVINFLUOR,https://tickertape.in/stocks/navin-fluorine-international-NAFL,Materials,Specialty Chemicals,20362,Moderate
+224,The Phoenix Mills Limited,PHOENIXLTD,https://tickertape.in/stocks/phoenix-mills-PHOE,Real Estate,Real Estate,16860,Moderate
+225,CRISIL Limited,CRISIL,https://tickertape.in/stocks/crisil-CRSL,Financials,Stock Exchanges & Ratings,20988,Moderate
+226,Oil India Limited,OIL,https://tickertape.in/stocks/oil-india-OILI,Energy,Oil & Gas - Exploration & Production,21357,Moderate
+227,Blue Dart Express Limited,BLUEDART,https://tickertape.in/stocks/blue-dart-express-BLDT,Industrials,Logistics,15603,Moderate
+228,The Indian Hotels Company Limited,INDHOTEL,https://tickertape.in/stocks/indian-hotels-company-IHTL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",24379,Moderate
+229,Glenmark Pharmaceuticals Limited,GLENMARK,https://tickertape.in/stocks/glenmark-pharmaceuticals-GLEN,Health Care,Pharmaceuticals,14588,Moderate
+230,Indian Bank,INDIANB,https://tickertape.in/stocks/indian-bank-INBA,Financials,Public Banks,17903,High
+231,Suven Pharmaceuticals Limited,SUVENPHAR,https://tickertape.in/stocks/suven-pharmaceuticals-SUVH,Health Care,Pharmaceuticals,12427,Moderate
+232,Manappuram Finance Limited,MANAPPURAM,https://tickertape.in/stocks/manappuram-finance-MNFL,Financials,Consumer Finance,13927,Moderate
+233,Zydus Wellness Limited,ZYDUSWELL,https://tickertape.in/stocks/zydus-wellness-ZYDS,Consumer Staples,FMCG - Foods,11858,Low
+234,Vaibhav Global Limited,VAIBHAVGBL,https://tickertape.in/stocks/vaibhav-global-VAIB,Consumer Discretionary,Apparel & Accessories,9326,High
+235,WABCO India Limited,WABCOINDIA,https://tickertape.in/stocks/wabco-india-WABC,Consumer Discretionary,Auto Parts,16079,Low
+236,RBL Bank Limited,RBLBANK,https://tickertape.in/stocks/rbl-bank-RATB,Financials,Private Banks,7843,High
+237,Castrol India Limited,CASTROLIND,https://tickertape.in/stocks/castrol-india-CAST,Materials,Commodity Chemicals,12349,Low
+238,ICICI Securities Limited,ISEC,https://tickertape.in/stocks/icici-securities-ICCI,Financials,Investment Banking & Brokerage,25408,Moderate
+239,Prestige Estates Projects Limited,PRESTIGE,https://tickertape.in/stocks/prestige-estates-projects-PREG,Real Estate,Real Estate,18940,Moderate
+240,Alkyl Amines Chemicals Limited,ALKYLAMINE,https://tickertape.in/stocks/alkyl-amines-chemicals-ALKY,Materials,Specialty Chemicals,19041,High
+241,Solar Industries India Limited,SOLARINDS,https://tickertape.in/stocks/solar-industries-india-SLIN,Materials,Commodity Chemicals,21490,Moderate
+242,Mahanagar Gas Limited,MGL,https://tickertape.in/stocks/mahanagar-gas-MGAS,Utilities,Gas Distribution,8607,Low
+243,City Union Bank Limited,CUB,https://tickertape.in/stocks/city-union-bank-CTBK,Financials,Private Banks,10495,Low
+244,Metropolis Healthcare Limited,METROPOLIS,https://tickertape.in/stocks/metropolis-healthcare-METP,Health Care,Hospitals & Diagnostic Centres,17543,Moderate
+245,Indigo Paints Limited,INDIGOPNTS,https://tickertape.in/stocks/indigo-paints-INDIG,Materials,Paints,10023,Low
+246,Cholamandalam Financial Holdings Limited,CHOLAHLDNG,https://tickertape.in/stocks/cholamandalam-financial-holdings-CHOL,Financials,Diversified Financials,12121,Low
+247,Bajaj Electricals Limited,BAJAJELEC,https://tickertape.in/stocks/bajaj-electricals-BJEL,Consumer Discretionary,Home Electronics & Appliances,14823,High
+248,Amber Enterprises India Limited,AMBER,https://tickertape.in/stocks/amber-enterprises-india-AMBE,Consumer Discretionary,Home Electronics & Appliances,11143,Moderate
+249,SKF India Limited,SKFINDIA,https://tickertape.in/stocks/skf-india-SKFB,Industrials,Industrial Machinery,18830,Moderate
+250,Tanla Platforms Limited,TANLA,https://tickertape.in/stocks/tanla-platforms-TNSL,Information Technology,Software Services,24430,Moderate
+251,Hindustan Copper Limited,HINDCOPPER,https://tickertape.in/stocks/hindustan-copper-HCPR,Materials,Mining - Copper,12904,High
+252,UCO Bank,UCOBANK,https://tickertape.in/stocks/uco-bank-UCBK,Financials,Public Banks,15781,Moderate
+253,Iifl Wealth Management Limited,IIFLWAM,https://tickertape.in/stocks/iifl-wealth-management-IIFW,Financials,Asset Management,13040,Moderate
+254,Jubilant Pharmova Limited,JUBLPHARMA,https://tickertape.in/stocks/jubilant-life-sciences-JULS,Health Care,Pharmaceuticals,9299,Moderate
+255,V-Guard Industries Limited,VGUARD,https://tickertape.in/stocks/v-guard-industries-VGUA,Industrials,Electrical Components & Equipments,9667,Moderate
+256,ITI Limited,ITI,https://tickertape.in/stocks/iti-ITEL,Communication Services,Telecom Equipments,11024,Moderate
+257,IIFL Finance Limited,IIFL,https://tickertape.in/stocks/iifl-finance-IIFL,Financials,Investment Banking & Brokerage,10817,High
+258,KEC International Limited,KEC,https://tickertape.in/stocks/kec-international-KECL,Industrials,Construction & Engineering,11900,Moderate
+259,Grindwell Norton Limited,GRINDWELL,https://tickertape.in/stocks/grindwell-norton-GRNN,Industrials,Industrial Machinery,21453,Moderate
+260,Aegis Logistics Limited,AEGISCHEM,https://tickertape.in/stocks/aegis-logistics-AEGS,Energy,Oil & Gas - Storage & Transportation,7637,Moderate
+261,Akzo Nobel India Limited,AKZOINDIA,https://tickertape.in/stocks/akzo-nobel-india-AKZO,Materials,Specialty Chemicals,9198,Low
+262,CREDITACCESS GRAMEEN LIMITED,CREDITACC,https://tickertape.in/stocks/creditaccess-grameen-CRDE,Financials,Consumer Finance,9289,Moderate
+263,Quess Corp Limited,QUESS,https://tickertape.in/stocks/quess-corp-QUEC,Industrials,Employment Services,13047,Moderate
+264,Procter & Gamble Health Limited,PGHL,https://tickertape.in/stocks/procter-and-gamble-health-PROR,Health Care,Pharmaceuticals,8663,Low
+265,SJVN Limited,SJVN,https://tickertape.in/stocks/sjvn-SJVN,Utilities,Renewable Energy,11946,Low
+266,National Aluminium Company Limited,NATIONALUM,https://tickertape.in/stocks/national-aluminium-co-NALU,Materials,Metals - Aluminium,18752,High
+267,Godrej Agrovet Limited,GODREJAGRO,https://tickertape.in/stocks/godrej-agrovet-GODE,Consumer Staples,Agro Products,10214,Low
+268,TTK Prestige Limited,TTKPRESTIG,https://tickertape.in/stocks/ttk-prestige-TTKL,Consumer Discretionary,Home Electronics & Appliances,14299,Moderate
+269,Alok Industries Limited,ALOKINDS,https://tickertape.in/stocks/alok-industries-ALOK,Consumer Discretionary,Textiles,12586,High
+270,Graphite India Limited,GRAPHITE,https://tickertape.in/stocks/graphite-india-GRPH,Industrials,Electrical Components & Equipments,9934,High
+271,Indian Energy Exchange Limited,IEX,https://tickertape.in/stocks/indian-energy-exchange-IIAN,Utilities,Power Trading & Consultancy,23489,Moderate
+272,Intellect Design Arena Limited,INTELLECT,https://tickertape.in/stocks/intellect-design-arena-INEE,Information Technology,Software Services,9723,High
+273,Orchid Pharma Limited,ORCHPHARMA,https://tickertape.in/stocks/orchid-pharma-ORCD,Health Care,Pharmaceuticals,1631,High
+274,Timken India Limited,TIMKEN,https://tickertape.in/stocks/timken-india-TIMK,Industrials,Industrial Machinery,15348,Moderate
+275,JB Chemicals & Pharmaceuticals Limited,JBCHEPHARM,https://tickertape.in/stocks/j-b-chemicals-and-pharmaceuticals-JBCH,Health Care,Pharmaceuticals,13318,Moderate
+276,Carborundum Universal Limited,CARBORUNIV,https://tickertape.in/stocks/carborundum-universal-CRBR,Industrials,Industrial Machinery,18702,Moderate
+277,Sheela Foam Limited,SFL,https://tickertape.in/stocks/sheela-foam-SHEF,Consumer Discretionary,Home Furnishing,16098,Low
+278,Central Bank of India,CENTRALBK,https://tickertape.in/stocks/central-bank-of-india-CBI,Financials,Public Banks,18664,High
+279,Chambal Fertilizers & Chemicals Limited,CHAMBLFERT,https://tickertape.in/stocks/chambal-fertilisers-and-chemicals-CHMB,Materials,Fertilizers & Agro Chemicals,16934,Moderate
+280,Motilal Oswal Financial Services Limited,MOTILALOFS,https://tickertape.in/stocks/motilal-oswal-financial-services-MOFS,Financials,Diversified Financials,13483,Moderate
+281,Indiabulls Housing Finance Limited,IBULHSGFIN,https://tickertape.in/stocks/indiabulls-housing-finance-INBF,Financials,Home Financing,9767,High
+282,Galaxy Surfactants Limited,GALAXYSURF,https://tickertape.in/stocks/galaxy-surfactants-GALX,Materials,Specialty Chemicals,11118,Low
+283,Shriram City Union Finance Limited,SHRIRAMCIT,https://tickertape.in/stocks/shriram-city-union-finance-SHCU,Financials,Consumer Finance,12118,High
+284,Blue Star Limited,BLUESTARCO,https://tickertape.in/stocks/blue-star-BLUS,Consumer Discretionary,Home Electronics & Appliances,9896,Low
+285,BASF India Limited,BASF,https://tickertape.in/stocks/basf-india-BASF,Materials,Diversified Chemicals,12902,Moderate
+286,CG Power and Industrial Solutions Limited,CGPOWER,https://tickertape.in/stocks/cg-power-and-industrial-solutions-CGPO,Industrials,Heavy Electrical Equipments,27658,Moderate
+287,Ratnamani Metals & Tubes Limited,RATNAMANI,https://tickertape.in/stocks/ratnamani-metals-and-tubes-RMT,Industrials,Building Products - Pipes,9111,Low
+288,Dhani Services Limited,DHANI,https://tickertape.in/stocks/dhani-services-INDB,Financials,Investment Banking & Brokerage,8837,High
+289,Symphony Limited,SYMPHONY,https://tickertape.in/stocks/symphony-SYMP,Consumer Discretionary,Home Electronics & Appliances,7083,Moderate
+290,Housing & Urban Development Corporation Limited,HUDCO,https://tickertape.in/stocks/housing-and-urban-development-corporation-HUDC,Financials,Specialized Finance,8007,Moderate
+291,KIOCL Limited,KIOCL,https://tickertape.in/stocks/kiocl-KIOC,Materials,Iron & Steel,15345,High
+292,NBCC (India) Limited,NBCC,https://tickertape.in/stocks/nbcc-india-NBCC,Industrials,Construction & Engineering,8271,Moderate
+293,Narayana Hrudayalaya Ltd.,NH,https://tickertape.in/stocks/narayana-hrudayalaya-NARY,Health Care,Hospitals & Diagnostic Centres,12987,Moderate
+294,Eris Lifesciences Limited,ERIS,https://tickertape.in/stocks/eris-lifesciences-ERIS,Health Care,Pharmaceuticals,10285,Low
+295,Can Fin Homes Limited,CANFINHOME,https://tickertape.in/stocks/can-fin-homes-CNFH,Financials,Home Financing,7736,Moderate
+296,ROUTE MOBILE LIMITED,ROUTE,https://tickertape.in/stocks/route-mobile-ROUT,Information Technology,IT Services & Consulting,11454,High
+297,Welspun India Limited,WELSPUNIND,https://tickertape.in/stocks/welspun-india-WLSP,Consumer Discretionary,Textiles,15507,High
+298,JM Financial Limited,JMFINANCIL,https://tickertape.in/stocks/jm-financial-JMSH,Financials,Investment Banking & Brokerage,7079,Moderate
+299,Dilip Buildcon Limited,DBL,https://tickertape.in/stocks/dilip-buildcon-DIBL,Industrials,Construction & Engineering,6358,Moderate
+300,Firstsource Solutions Limited,FSL,https://tickertape.in/stocks/firstsource-solutions-FISO,Information Technology,Outsourced services,12656,High
+301,Finolex Industries Limited,FINPIPE,https://tickertape.in/stocks/finolex-industries-FINX,Industrials,Building Products - Pipes,12827,Moderate
+302,Poly Medicure Limited,POLYMED,https://tickertape.in/stocks/poly-medicure-PLMD,Health Care,Health Care Equipment & Supplies,9126,Moderate
+303,CESC Limited,CESC,https://tickertape.in/stocks/cesc-CESC,Utilities,Power Generation,11863,Moderate
+304,DCM Shriram Limited,DCMSHRIRAM,https://tickertape.in/stocks/dcm-shriram-DCMS,Materials,Diversified Chemicals,16345,High
+305,Bombay Burmah Trading Corporation Limited,BBTC,https://tickertape.in/stocks/bombay-burmah-trading-corporation-BBRM,Consumer Staples,Tea & Coffee,7659,Low
+306,Sterlite Technologies Limited,STLTECH,https://tickertape.in/stocks/sterlite-technologies-STTE,Communication Services,Telecom Equipments,11169,Moderate
+307,Strides Pharma Science Limited,STAR,https://tickertape.in/stocks/strides-pharma-science-SRID,Health Care,Pharmaceuticals,4034,Moderate
+308,IDFC Limited,IDFC,https://tickertape.in/stocks/idfc-IDFC,Financials,Diversified Financials,9961,High
+309,Asahi India Glass Limited,ASAHIINDIA,https://tickertape.in/stocks/asahi-india-glass-AISG,Consumer Discretionary,Auto Parts,11916,Moderate
+310,AstraZeneca Pharma India Limited,ASTRAZEN,https://tickertape.in/stocks/astrazeneca-pharma-india-ASTR,Health Care,Pharmaceuticals,7630,Low
+311,Granules India Limited,GRANULES,https://tickertape.in/stocks/granules-india-GRAN,Health Care,Pharmaceuticals,8075,Moderate
+312,Radico Khaitan Limited,RADICO,https://tickertape.in/stocks/radico-khaitan-RADC,Consumer Staples,Alcoholic Beverages,16436,Moderate
+313,Vardhman Textiles Limited,VTL,https://tickertape.in/stocks/vardhman-textiles-VART,Consumer Discretionary,Textiles,14784,Moderate
+314,EPL Limited,EPL,https://tickertape.in/stocks/epl-ESSL,Materials,Packaging,6520,Moderate
+315,PVR Limited,PVR,https://tickertape.in/stocks/pvr-PVRL,Communication Services,Theatres,8193,Moderate
+316,Redington (India) Limited,REDINGTON,https://tickertape.in/stocks/redington-india-REDI,Information Technology,Technology Hardware,11365,High
+317,UTI Asset Management Company Limited,UTIAMC,https://tickertape.in/stocks/uti-asset-management-company-UTI,Financials,Asset Management,13690,Moderate
+318,K.P.R. Mill Limited,KPRMILL,https://tickertape.in/stocks/kpr-mill-KPRM,Consumer Discretionary,Textiles,24303,High
+319,Birla Corporation Limited,BIRLACORPN,https://tickertape.in/stocks/birla-corporation-BRLC,Materials,Cement,11391,Moderate
+320,Lakshmi Machine Works Limited,LAXMIMACH,https://tickertape.in/stocks/lakshmi-machine-works-LKMC,Industrials,Industrial Machinery,10085,Moderate
+321,Johnson Controls - Hitachi Air Conditioning India Limited,JCHAC,https://tickertape.in/stocks/johnson-controls-hitachi-air-conditioning-india-JCHA,Consumer Discretionary,Home Electronics & Appliances,5399,Low
+322,Trident Limited,TRIDENT,https://tickertape.in/stocks/trident-TRIE,Consumer Discretionary,Textiles,26589,High
+323,Cyient Limited,CYIENT,https://tickertape.in/stocks/cyient-CYIE,Information Technology,Software Services,11912,Moderate
+324,Century Plyboards (India) Limited,CENTURYPLY,https://tickertape.in/stocks/century-plyboards-india-CNTP,Materials,Wood Products,13803,Moderate
+325,BIRLASOFT LIMITED,BSOFT,https://tickertape.in/stocks/birlasoft-BIRS,Information Technology,IT Services & Consulting,15580,Moderate
+326,Kalyan Jewellers India Limited,KALYANKJIL,https://tickertape.in/stocks/kalyan-jewellers-india-KALYA,Consumer Discretionary,"Precious Metals, Jewellery & Watches",7303,Moderate
+327,Fine Organic Industries Limited,FINEORG,https://tickertape.in/stocks/fine-organic-industries-FINO,Materials,Specialty Chemicals,11745,Moderate
+328,NLC India Limited,NLCINDIA,https://tickertape.in/stocks/nlc-india-NLCI,Materials,Metals - Diversified,8583,Moderate
+329,Aster DM Healthcare Limited,ASTERDM,https://tickertape.in/stocks/aster-dm-healthcare-ATRD,Health Care,Hospitals & Diagnostic Centres,8953,Moderate
+330,Equitas Small Finance Bank Limited,EQUITASBNK,https://tickertape.in/stocks/equitas-small-finance-bank-EQU,Financials,Private Banks,6806,Moderate
+331,Central Depository Services (India) Limited,CDSL,https://tickertape.in/stocks/central-depository-services-india-CENA,Financials,Stock Exchanges & Ratings,16039,Moderate
+332,Mangalore Refinery and Petrochemicals Limited,MRPL,https://tickertape.in/stocks/mangalore-refinery-and-petrochemicals-MRPL,Energy,Oil & Gas - Refining & Marketing,7755,Moderate
+333,Capri Global Capital Limited,CGCL,https://tickertape.in/stocks/capri-global-capital-CAPG,Financials,Consumer Finance,9050,Moderate
+334,PNC Infratech Limited,PNCINFRA,https://tickertape.in/stocks/pnc-infratech-PNCI,Industrials,Construction & Engineering,7094,Moderate
+335,Orient Electric Limited,ORIENTELEC,https://tickertape.in/stocks/orient-electric-ONTE,Consumer Discretionary,Home Electronics & Appliances,7876,Moderate
+336,Prism Johnson Limited,PRSMJOHNSN,https://tickertape.in/stocks/prism-johnson-PRIS,Materials,Cement,6571,Moderate
+337,Aarti Drugs Limited,AARTIDRUGS,https://tickertape.in/stocks/aarti-drugs-ADRG,Health Care,Pharmaceuticals,4981,Moderate
+338,Teamlease Services Limited,TEAMLEASE,https://tickertape.in/stocks/teamlease-services-TLSV,Industrials,Employment Services,7176,Moderate
+339,MMTC Limited,MMTC,https://tickertape.in/stocks/mmtc-MMTC,Industrials,Commodities Trading,6735,High
+340,Gujarat Fluorochemicals Limited,FLUOROCHEM,https://tickertape.in/stocks/gujarat-fluorochemicals-GUJL,Materials,Specialty Chemicals,28294,High
+341,Infibeam Avenues Limited,INFIBEAM,https://tickertape.in/stocks/infibeam-avenues-IFIB,Information Technology,IT Services & Consulting,5281,High
+342,PNB Housing Finance Limited,PNBHOUSING,https://tickertape.in/stocks/pnb-housing-finance-PNBH,Financials,Home Financing,8259,High
+343,CEAT Limited,CEATLTD,https://tickertape.in/stocks/ceat-CEAT,Consumer Discretionary,Tires & Rubber,4797,Moderate
+344,GMM Pfaudler Limited,GMMPFAUDLR,https://tickertape.in/stocks/gmm-pfaudler-GMMP,Industrials,Industrial Machinery,7474,Moderate
+345,Sundaram Clayton Limited,SUNCLAYLTD,https://tickertape.in/stocks/sundaram-clayton-SUND,Consumer Discretionary,Auto Parts,7827,Moderate
+346,Zensar Technologies Limited,ZENSARTECH,https://tickertape.in/stocks/zensar-technologies-ZENT,Information Technology,IT Services & Consulting,11773,High
+347,Mahindra CIE Automotive Limited,MAHINDCIE,https://tickertape.in/stocks/mahindra-cie-automotive-MAHN,Consumer Discretionary,Auto Parts,8729,Moderate
+348,Bharat Dynamics Limited,BDL,https://tickertape.in/stocks/bharat-dynamics-BARA,Industrials,Aerospace & Defense Equipments,7221,Low
+349,Rail Vikas Nigam Limited,RVNL,https://tickertape.in/stocks/rail-vikas-nigam-RAIV,Financials,Specialized Finance,7349,High
+350,Elgi Equipments Limited,ELGIEQUIP,https://tickertape.in/stocks/elgi-equipments-ELGE,Industrials,Industrial Machinery,9796,Moderate
+351,KNR Constructions Limited,KNRCON,https://tickertape.in/stocks/knr-constructions-KNRL,Industrials,Construction & Engineering,8332,Moderate
+352,Sequent Scientific Limited,SEQUENT,https://tickertape.in/stocks/sequent-scientific-SEQU,Health Care,Pharmaceuticals,4113,High
+353,Vakrangee Limited,VAKRANGEE,https://tickertape.in/stocks/vakrangee-VAKR,Information Technology,Outsourced services,4465,High
+354,Edelweiss Financial Services Limited,EDELWEISS,https://tickertape.in/stocks/edelweiss-financial-services-EDEL,Financials,Diversified Financials,6736,Moderate
+355,Brigade Enterprises Limited,BRIGADE,https://tickertape.in/stocks/brigade-enterprises-BRIG,Real Estate,Real Estate,10930,Moderate
+356,Finolex Cables Limited,FINCABLES,https://tickertape.in/stocks/finolex-cables-FNXC,Industrials,Cables,8302,Moderate
+357,EIH Limited,EIHOTEL,https://tickertape.in/stocks/eih-EIHO,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",7945,Moderate
+358,ABB Power Products and Systems India Limited,POWERINDIA,https://tickertape.in/stocks/abb-power-products-and-systems-india-ABBW,Industrials,Heavy Electrical Equipments,10613,Moderate
+359,RITES Limited,RITES,https://tickertape.in/stocks/rites-RITS,Industrials,Business Support Services,6401,Low
+360,SIS LIMITED,SIS,https://tickertape.in/stocks/security-and-intelligence-services-india-SECR,Industrials,Business Support Services,6821,Moderate
+361,Balaji Amines Limited,BALAMINES,https://tickertape.in/stocks/balaji-amines-BAMN,Materials,Specialty Chemicals,12260,High
+362,HEG Limited,HEG,https://tickertape.in/stocks/heg-HEGL,Industrials,Electrical Components & Equipments,6962,High
+363,Avanti Feeds Limited,AVANTIFEED,https://tickertape.in/stocks/avanti-feeds-AVNT,Consumer Staples,Packaged Foods & Meats,7910,Moderate
+364,EID Parry India Limited,EIDPARRY,https://tickertape.in/stocks/eid-parry-india-EIDP,Consumer Staples,Sugar,8882,Moderate
+365,Kalpataru Power Transmission Limited,KALPATPOWR,https://tickertape.in/stocks/kalpataru-power-transmission-KAPT,Utilities,Power Infrastructure,5572,Moderate
+366,V-Mart Retail Limited,VMART,https://tickertape.in/stocks/v-mart-retail-VMAR,Consumer Discretionary,Retail - Department Stores,7333,Moderate
+367,Rossari Biotech Limited,ROSSARI,https://tickertape.in/stocks/rossari-biotech-ROSB,Materials,Specialty Chemicals,7228,Moderate
+368,Sonata Software Limited,SONATSOFTW,https://tickertape.in/stocks/sonata-software-SOFT,Information Technology,IT Services & Consulting,9036,Moderate
+369,Just Dial Limited,JUSTDIAL,https://tickertape.in/stocks/just-dial-JUST,Communication Services,Online Services,6802,High
+370,HeidelbergCement India Limited,HEIDELBERG,https://tickertape.in/stocks/heidelbergcement-india-HEID,Materials,Cement,5149,Low
+371,Garware Technical Fibres Limited,GARFIBRES,https://tickertape.in/stocks/garware-technical-fibres-GRWL,Consumer Discretionary,Textiles,6727,Moderate
+372,Ujjivan Small Finance Bank Limited,UJJIVANSFB,https://tickertape.in/stocks/ujjivan-small-finance-bank-UJJI,Financials,Private Banks,3275,Moderate
+373,Tata Investment Corporation Limited,TATAINVEST,https://tickertape.in/stocks/tata-investment-corporation-TINV,Financials,Asset Management,7143,Low
+374,VST Industries Limited,VSTIND,https://tickertape.in/stocks/vst-industries-VSTI,Consumer Staples,FMCG - Tobacco,4892,Low
+375,BEML Limited,BEML,https://tickertape.in/stocks/beml-BEML,Industrials,Rail,7204,Moderate
+376,Century Textiles & Industries Limited,CENTURYTEX,https://tickertape.in/stocks/century-textile-and-industries-CNTY,Materials,Cement,10224,Moderate
+377,The India Cements Limited,INDIACEM,https://tickertape.in/stocks/india-cements-ICMN,Materials,Cement,6210,Moderate
+378,Shipping Corporation Of India Limited,SCI,https://tickertape.in/stocks/shipping-corporation-of-india-SCI,Industrials,Logistics,6609,Moderate
+379,JK Lakshmi Cement Limited,JKLAKSHMI,https://tickertape.in/stocks/jk-lakshmi-cement-JKLC,Materials,Cement,7088,Moderate
+380,Cera Sanitaryware Limited,CERA,https://tickertape.in/stocks/cera-sanitaryware-CERA,Industrials,Building Products - Ceramics,6456,Moderate
+381,Jyothy Labs Limited,JYOTHYLAB,https://tickertape.in/stocks/jyothy-labs-JYOI,Consumer Staples,FMCG - Household Products,5069,Low
+382,VIP Industries Limited,VIPIND,https://tickertape.in/stocks/v-i-p-industries-VIPI,Consumer Discretionary,Apparel & Accessories,7740,Moderate
+383,Solara Active Pharma Sciences Limited,SOLARA,https://tickertape.in/stocks/solara-active-pharma-sciences-SOLA,Health Care,Pharmaceuticals,3871,Moderate
+384,TV18 Broadcast Limited,TV18BRDCST,https://tickertape.in/stocks/tv18-broadcast-TVEB,Communication Services,TV Channels & Broadcasters,7971,High
+385,Cochin Shipyard Limited,COCHINSHIP,https://tickertape.in/stocks/cochin-shipyard-COCH,Industrials,Shipbuilding,4562,Low
+386,Burger King India Limited,BURGERKING,https://tickertape.in/stocks/burger-king-india-BUR,Consumer Discretionary,Restaurants & Cafes,5410,Moderate
+387,Varroc Engineering Limited,VARROC,https://tickertape.in/stocks/varroc-engineering-VARE,Consumer Discretionary,Auto Parts,5581,Moderate
+388,Rallis India Limited,RALLIS,https://tickertape.in/stocks/rallis-india-RALL,Materials,Fertilizers & Agro Chemicals,5339,Low
+389,Anupam Rasayan India Limited,ANURAS,https://tickertape.in/stocks/anupam-rasayan-india-ANUR,Materials,Specialty Chemicals,10342,Low
+390,KPIT Technologies Limited,KPITTECH,https://tickertape.in/stocks/kpit-technologies-KPIE,Information Technology,IT Services & Consulting,16396,High
+391,FDC Limited,FDC,https://tickertape.in/stocks/f-d-c-FDC,Health Care,Pharmaceuticals,5109,Moderate
+392,NCC Limited,NCC,https://tickertape.in/stocks/ncc-NCCL,Industrials,Construction & Engineering,4378,High
+393,Rain Industries Limited,RAIN,https://tickertape.in/stocks/rain-industries-RAID,Materials,Metals - Coke,8173,High
+394,Thyrocare Technologies Limited,THYROCARE,https://tickertape.in/stocks/thyrocare-technologies-THYO,Health Care,Hospitals & Diagnostic Centres,5785,Moderate
+395,Godfrey Phillips India Limited,GODFRYPHLP,https://tickertape.in/stocks/godfrey-phillips-india-GDFR,Consumer Staples,FMCG - Tobacco,5932,Low
+396,KEI Industries Limited,KEI,https://tickertape.in/stocks/kei-industries-KEIN,Industrials,Cables,10423,High
+397,Gujarat Pipavav Port Limited,GPPL,https://tickertape.in/stocks/gujarat-pipavav-port-GPPL,Industrials,Ports,4778,Moderate
+399,MAS Financial Services Limited,MASFIN,https://tickertape.in/stocks/mas-financial-services-MASF,Financials,Diversified Financials,3410,Low
+400,Laxmi Organic Industries Limited,LXCHEM,https://tickertape.in/stocks/laxmi-organic-industries-LXC,Materials,Specialty Chemicals,11413,High
+401,The Great Eastern Shipping Company Limited,GESHIP,https://tickertape.in/stocks/great-eastern-shipping-company-GESC,Energy,Oil & Gas - Storage & Transportation,4408,Moderate
+402,Prince Pipes And Fittings Limited,PRINCEPIPE,https://tickertape.in/stocks/prince-pipes-and-fittings-PRCE,Industrials,Building Products - Pipes,7752,Moderate
+403,Wockhardt Limited,WOCKPHARMA,https://tickertape.in/stocks/wockhardt-WCKH,Health Care,Pharmaceuticals,4852,High
+404,Hathway Cable & Datacom Limited,HATHWAY,https://tickertape.in/stocks/hathway-cable-and-datacom-HAWY,Communication Services,Cable & D2H,3885,Moderate
+405,Balrampur Chini Mills Limited,BALRAMCHIN,https://tickertape.in/stocks/balrampur-chini-mills-BACH,Consumer Staples,Sugar,8718,High
+406,IFB Industries Limited,IFBIND,https://tickertape.in/stocks/ifb-industries-IFBI,Consumer Discretionary,Auto Parts,4588,Moderate
+407,Nazara Technologies Limited,NAZARA,https://tickertape.in/stocks/nazara-technologies-NAZ,Consumer Discretionary,Theme Parks & Gaming,8190,High
+408,Responsive Industries Limited,RESPONIND,https://tickertape.in/stocks/responsive-industries-RSPO,Industrials,Building Products - Granite,4438,High
+409,Karur Vysya Bank Limited,KARURVYSYA,https://tickertape.in/stocks/karur-vysya-bank-KARU,Financials,Private Banks,3685,Moderate
+410,Lux Industries Limited,LUXIND,https://tickertape.in/stocks/lux-industries-LUXI,Consumer Discretionary,Apparel & Accessories,10984,Moderate
+411,Engineers India Limited,ENGINERSIN,https://tickertape.in/stocks/engineers-india-ENGI,Industrials,Construction & Engineering,3945,Low
+412,Delta Corp Limited,DELTACORP,https://tickertape.in/stocks/delta-corp-DELT,Consumer Discretionary,Theme Parks & Gaming,6889,High
+413,Mazagon Dock Shipbuilders Limited,MAZDOCK,https://tickertape.in/stocks/mazagon-dock-shipbuilders-MAZ,Industrials,Shipbuilding,5807,Moderate
+414,Rashtriya Chemicals and Fertilizers Limited,RCF,https://tickertape.in/stocks/rashtriya-chemicals-and-fertilizers-RSTC,Materials,Fertilizers & Agro Chemicals,4300,High
+415,JSW Holdings Limited,JSWHL,https://tickertape.in/stocks/jsw-holdings-JNSW,Financials,Asset Management,4626,Moderate
+416,Suzlon Energy Limited,SUZLON,https://tickertape.in/stocks/suzlon-energy-SUZL,Industrials,Renewable Energy Equipment & Services,9079,High
+417,KRBL Limited,KRBL,https://tickertape.in/stocks/krbl-KRBL,Consumer Staples,Packaged Foods & Meats,6002,High
+418,Mahindra Logistics Limited,MAHLOG,https://tickertape.in/stocks/mahindra-logistics-MALO,Industrials,Logistics,4925,Moderate
+419,Ircon International Limited,IRCON,https://tickertape.in/stocks/ircon-international-IRCN,Industrials,Construction & Engineering,4359,Moderate
+420,Sterling And Wilson Solar Limited,SWSOLAR,https://tickertape.in/stocks/sterling-and-wilson-solar-STEN,Industrials,Renewable Energy Equipment & Services,7274,High
+421,Sobha Limited,SOBHA,https://tickertape.in/stocks/sobha-SOBH,Real Estate,Real Estate,8363,High
+422,Jubilant Ingrevia Limited,JUBLINGREA,https://tickertape.in/stocks/jubilant-ingrevia-JUB,Health Care,Pharmaceuticals,9479,High
+423,Sunteck Realty Limited,SUNTECK,https://tickertape.in/stocks/sunteck-realty-SUNT,Real Estate,Real Estate,7287,Moderate
+424,Maharashtra Scooters Limited,MAHSCOOTER,https://tickertape.in/stocks/maharashtra-scooters-MHSC,Consumer Discretionary,Two Wheelers,4356,Moderate
+425,Railtel Corporation Of India Limited,RAILTEL,https://tickertape.in/stocks/railtel-corporation-of-india-RAIL,Information Technology,Communication & Networking,3835,High
+426,CSB Bank Limited,CSBBANK,https://tickertape.in/stocks/csb-bank-CSBB,Financials,Private Banks,4241,Moderate
+427,Bharat Rasayan Limited,BHARATRAS,https://tickertape.in/stocks/bharat-rasayan-BRSN,Materials,Fertilizers & Agro Chemicals,5010,Moderate
+428,Star Cement Limited,STARCEMENT,https://tickertape.in/stocks/star-cement-STAT,Materials,Cement,3849,Low
+429,Supreme Petrochem Limited,SUPPETRO,https://tickertape.in/stocks/supreme-petrochem-SPTL,Materials,Specialty Chemicals,6622,Moderate
+430,Home First Finance Company India Limited,HOMEFIRST,https://tickertape.in/stocks/home-first-finance-company-india-HOM,Financials,Home Financing,7214,Moderate
+431,Hemisphere Properties India Limited,HEMIPROP,https://tickertape.in/stocks/hemisphere-properties-india-HEMI,Real Estate,Real Estate,3714,High
+432,Spandana Sphoorty Financial Limited,SPANDANA,https://tickertape.in/stocks/spandana-sphoorty-financial-SPAD,Financials,Consumer Finance,2811,High
+433,IndoStar Capital Finance Limited,INDOSTAR,https://tickertape.in/stocks/indostar-capital-finance-INAC,Financials,Consumer Finance,3325,Moderate
+434,Advanced Enzyme Technologies Limited,ADVENZYMES,https://tickertape.in/stocks/advanced-enzyme-technologies-ADEN,Materials,Specialty Chemicals,3723,Moderate
+435,Suprajit Engineering Limited,SUPRAJIT,https://tickertape.in/stocks/suprajit-engineering-SUPE,Consumer Discretionary,Auto Parts,6284,Moderate
+436,eClerx Services Limited,ECLERX,https://tickertape.in/stocks/eclerx-services-ECLE,Information Technology,Outsourced services,9214,Moderate
+437,Bajaj Consumer Care Limited,BAJAJCON,https://tickertape.in/stocks/bajaj-consumer-care-BACO,Consumer Staples,FMCG - Personal Products,2921,Moderate
+438,IRB Infrastructure Developers Limited,IRB,https://tickertape.in/stocks/irb-infrastructure-developers-IRBI,Industrials,Construction & Engineering,13346,High
+439,Network18 Media & Investments Limited,NETWORK18,https://tickertape.in/stocks/network18-media-and-investments-NEFI,Communication Services,Movies & TV Serials,9464,High
+440,Fertilizers and Chemicals Travancore Limited,FACT,https://tickertape.in/stocks/fertilisers-and-chemicals-travancore-FCTL,Materials,Fertilizers & Agro Chemicals,8832,High
+441,Sun Pharma Advanced Research Company Limited,SPARC,https://tickertape.in/stocks/sun-pharma-advanced-research-co-SPRC,Health Care,Pharmaceuticals,7750,High
+442,Nesco Limited,NESCO,https://tickertape.in/stocks/nesco-NSEN,Real Estate,Real Estate,4052,Low
+443,Indiabulls Real Estate Limited,IBREALEST,https://tickertape.in/stocks/indiabulls-real-estate-INRL,Real Estate,Real Estate,7195,High
+444,Tasty Bite Eatables Limited,TASTYBITE,https://tickertape.in/stocks/tasty-bite-eatables-TABE,Consumer Staples,Packaged Foods & Meats,3495,Moderate
+445,TCI Express Limited,TCIEXP,https://tickertape.in/stocks/tci-express-TCIE,Industrials,Logistics,8166,High
+446,Gulf Oil Lubricants India Limited,GULFOILLUB,https://tickertape.in/stocks/gulf-oil-lubricants-india-GOLU,Materials,Commodity Chemicals,2306,Low
