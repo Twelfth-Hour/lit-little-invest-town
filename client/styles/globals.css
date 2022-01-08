@@ -1,0 +1,32 @@
+html,
+body {
+  padding: 0;
+  margin: 5rem;
+  margin-top: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #fff5f5 !important;
+  scroll-behavior: smooth;
+}
+
+.input-group-text {
+  background: #fdc55e !important;
+  border-color: #fdc55e !important;
+}
+
+.form-control {
+  border-color: #fdc55e !important;
+  color: #674913 !important;
+  font-size: 13px !important;
+}
+
+input {
+  outline: 0 !important;
+  transition: none !important;
+}
+
+input:hover,
+input:focus,
+input:active {
+  box-shadow: none !important;
+}

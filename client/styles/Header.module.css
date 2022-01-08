@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #fff5f5 !important;
+}
+
+.link {
+  color: #f54748 !important;
+}
+
+.link:hover,
+.link:active {
+  font-weight: 600;
+}
+
+.logo_img {
+  width: 5rem !important;
+  margin: 0 !important;
+}
