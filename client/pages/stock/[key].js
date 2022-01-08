@@ -3,10 +3,26 @@ import { server } from "../../config/server.js";
 import { Row, Col, InputGroup } from "react-bootstrap";
 import styles from "../../styles/Profile.module.css";
 import { useState } from "react";
+import ReactTooltip from "react-tooltip";
 
 const Detail = ({ stock, similar }) => {
   /* eslint-disable no-unused-vars */
   const [currPrice, setCurr] = useState(stock.currPrice);
+
+  setInterval(async () => {
+    let key = stock.symbol;
+    let response = await fetch(`${server}/api/stock_price`, {
+      method: "POST",
+      body: key
+    });
+  
+    let {data, err} = await response.json();
+    let price = 0;
+    if (data) price = data;
+    if (price !== 0) {
+      setCurr(price);
+    }
+  }, 30 * 60 * 1000);
 
   /* eslint-enable no-unused-vars */
   return (
@@ -107,10 +123,26 @@ const Detail = ({ stock, similar }) => {
             <div>
               {stock.insight.map((item, idx) => {
                 return (
-                  <div key={idx}>
+                  <div key={idx} className={styles.insight_point}>
                     <span key={idx}>
-                      {idx + 1}. {item}
+                      {idx + 1}. {item.text}
                     </span>
+                  
+                    {
+                      item.info.length !== 0 ? <>
+                      <button data-tip data-for={`${stock.symbol}-${idx}`}>
+                  <img src="/info.svg" />
+                </button><ReactTooltip
+                      id={`${stock.symbol}-${idx}`}
+                      type="info"
+                      effect="solid"
+                    >
+                      <span>
+                        {item.info}
+                      </span>
+                    </ReactTooltip></> : <></>
+                    }
+                      
                   </div>
                 );
               })}
@@ -124,17 +156,48 @@ const Detail = ({ stock, similar }) => {
 
 export default Detail;
 
-export const getServerSideProps = (context) => {
+export const getServerSideProps = async(context) => {
   let key = context.query.key;
+
+  let response = await fetch(`${server}/api/stock_price`, {
+    method: "POST",
+    body: key
+  });
+
+  let {data, err} = await response.json();
+  let currPrice = 0;
+  if (data) currPrice = data;
+
   let insight = [
-    "Alice makes and sells oil and electricity",
-    "In 2021 Alice made 50 Lakh Rupees",
-    "Last year she made 61 Lakh Rupees",
-    "Out of this, she could save up 5 Lakh Rupees which is 20% more than what she saved last year",
-    "Alice bought a new oil making machine for 3 Lakh Rupees",
-    "Alice also invested 5 Lakh rupees in Mutual Funds",
-    "Alice also paid her loan by 2 Lakh rupees and her loan now is 3.5 Lakhs",
-  ];
+    {
+      text: "Alice makes and sells oil and electricity",
+      info: ""
+    },
+    {
+      text: "In 2021 Alice made 50 Lakh Rupees",
+      info: "This is her total revene in 2021"
+    },
+    {
+      text: "Last year she made 61 Lakh Rupees",
+      info: "This is her total revene in 2020"
+    },
+    {
+      text: "Out of this, she could save up 5 Lakh Rupees which is 20% more than what she saved last year",
+      info: ""
+    },
+    {
+      text: "Alice bought a new oil making machine for 3 Lakh Rupees",
+      info: ""
+    },
+    {
+      text: "Alice also invested 5 Lakh rupees in Mutual Funds",
+      info: ""
+    },
+    {
+      text: "Alice also paid her loan by 2 Lakh rupees and her loan now is 3.5 Lakhs",
+      info: ""
+    }
+  ]
 
   let similarProfiles = [
     {
@@ -169,7 +232,7 @@ export const getServerSideProps = (context) => {
     sector: "Information Technology",
     sub_sector: "IT Services & Consulting",
     insight,
-    currPrice: 197308,
+    currPrice
   };
 
   return {
