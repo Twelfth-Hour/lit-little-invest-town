@@ -1,0 +1,35 @@
+.main_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  height: 100px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-top: 1px solid #e3afaf;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #f54748 !important;
+  margin: 0 0.5rem;
+}
+
+.footer_img {
+  width: 5rem;
+  margin: 0 0.5rem;
+}
+
+.text {
+  color: #595959;
+}
+
+.highlight {
+  color: #f54748 !important;
+}

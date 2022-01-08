@@ -30,7 +30,7 @@ const Header = () => {
               How LIT Works
             </Nav.Link>
           </Nav>
-          <Nav className="m-auto">
+          <Nav className="ms-auto">
             <InputGroup className="mb-3">
               <InputGroup.Text id="basic-addon1">
                 <img

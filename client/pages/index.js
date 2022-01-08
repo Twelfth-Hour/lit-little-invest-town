@@ -63,8 +63,35 @@ export default function Home() {
               us can understand
             </span>
           </Row>
-          <Row>
-            <Button className={styles.btn}>View Stock Profiles</Button>
+          <br />
+          <Row className={styles.text}>
+            <span>
+              <img
+                src="/pointer.svg"
+                alt="pointer"
+                style={{ width: "1.5rem" }}
+              />{" "}
+              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+              archivos de texto
+            </span>
+            <span>
+              <img
+                src="/pointer.svg"
+                alt="pointer"
+                style={{ width: "1.5rem" }}
+              />{" "}
+              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+              archivos de texto
+            </span>
+            <span>
+              <img
+                src="/pointer.svg"
+                alt="pointer"
+                style={{ width: "1.5rem" }}
+              />{" "}
+              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+              archivos de texto
+            </span>
           </Row>
         </Col>
       </Row>
