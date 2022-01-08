@@ -2,17 +2,19 @@ import Head from "next/head";
 import { Row, Col, Pagination, Button } from "react-bootstrap";
 import { useState } from "react";
 import Company from "../Components/Company.js";
+import { server } from "../config/server.js";
 import styles from "../styles/Stock.module.css";
 
+
 const Stock = ({ total, stocks }) => {
-  const initialState = stocks;
+  const [page, setPage] = useState(1);
+  const initialState = stocks.slice(0, 4);
   const totalPages = Math.ceil(total / 4);
   /* eslint-disable no-unused-vars */
   const [lst, setList] = useState(initialState);
   const [sort, setSort] = useState("Name");
   const [sortBy, setSortBy] = useState(0);
   const [risk, setRisk] = useState("");
-  const [page, setPage] = useState(1);
 
   /* eslint-enable no-unused-vars */
   return (
@@ -33,15 +35,19 @@ const Stock = ({ total, stocks }) => {
               onClick={(e) => {
                 e.preventDefault();
                 setPage(1);
-                // create api to get first page information
+                setList(stocks.slice(0, 4));
+                window.scrollTo(0,0);
               }}
             />
             <Pagination.Prev
               disabled={page === 1}
               onClick={(e) => {
                 e.preventDefault();
+                let cursor = 4 * page;
                 setPage(page - 1);
-                // create api to get next page information
+                console.log(cursor - 4, cursor);
+                setList(stocks.slice(cursor - 4, cursor));
+                window.scrollTo(0,0);
               }}
             />
             <Pagination.Item className={styles.currPage}>
@@ -51,15 +57,19 @@ const Stock = ({ total, stocks }) => {
               disabled={page === totalPages}
               onClick={(e) => {
                 e.preventDefault();
+                let cursor = 4 * page;
                 setPage(page + 1);
-                // create api to get next page information
+                setList(stocks.slice(cursor, cursor + 4));
+                window.scrollTo(0, 0);
               }}
             />
             <Pagination.Last
               onClick={(e) => {
                 e.preventDefault();
+                let cursor = 4 * (totalPages - 1);
                 setPage(totalPages);
-                // create api to get last page information
+                setList(stocks.slice(cursor));
+                window.scrollTo(0, 0);
               }}
             />
           </Pagination>
@@ -229,52 +239,33 @@ const Stock = ({ total, stocks }) => {
 
 export default Stock;
 
-export const getServerSideProps = () => {
-  // let cursor = 4;
-  let total = 4;
-  let stocks = [
-    {
-      name: "Reliance Industries Limited",
-      symbol: "RELIANCE",
-      profile: "Raveen",
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C4D03AQGuSVxEgwSDaA/profile-displayphoto-shrink_800_800/0/1616911585841?e=1646870400&v=beta&t=cxUKCI7jqSaOEak9BegiCn7MivEturemGIGAPKv2JTI",
-      sector: "Energy",
-      sub_sector: "Oil & Gas - Refining & Marketing",
-    },
-    {
-      name: "Tata Consultancy Services Limited",
-      symbol: "TCS",
-      profile: "Tania",
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C4D03AQFiI0cCzdX-Qw/profile-displayphoto-shrink_800_800/0/1597827671191?e=1646870400&v=beta&t=ZQ9xOcOI5yA_22mDLOeMq_UBdl2KKxK0atR2H7RddkM",
-      sector: "Information Technology",
-      sub_sector: "IT Services & Consulting",
-    },
-    {
-      name: "Kotak Mahindra Bank Limited",
-      symbol: "KOTAKBANK",
-      profile: "Kshitij",
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C4E03AQG-PDOJqcsBtA/profile-displayphoto-shrink_800_800/0/1627758064351?e=1646870400&v=beta&t=tbC0f2FGiiXfa0SImWFIp-eWRl_Ur2QxARj1LVsp6w4",
-      sector: "Financials",
-      sub_sector: "Private Banks",
-    },
-    {
-      name: "Sun Pharmaceutical Industries Limited",
-      symbol: "SUNPHARMA",
-      profile: "Sunny",
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C5103AQHTbCiP412O8w/profile-displayphoto-shrink_800_800/0/1580654448686?e=1646870400&v=beta&t=lppNzlQdBstfRP_4yHb4Qsa6HkQSdxZrTMPdbqRlkuA",
-      sector: "Health Care",
-      sub_sector: "Pharmaceuticals",
-    },
-  ];
+export const getServerSideProps = async () => {
+
+  let uri = `${server}/api/companies`;
+  let response = await fetch(uri, {
+    method: "POST",
+    body: JSON.stringify({
+      sort: "name",
+      reverse: false
+    })
+  })
+
+  let { data, err } = await response.json();
+  if (err) {
+    return {
+      props: {
+        total: 0,
+        stocks: []
+      }
+    }
+  }
+
+  let total = data.length;
 
   return {
     props: {
       total,
-      stocks,
+      stocks: data,
     },
   };
 };

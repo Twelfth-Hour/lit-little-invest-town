@@ -34,13 +34,15 @@
 
 .avatar_sec {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
-.img {
+.img,
+.avatar_sec svg {
   border-radius: 50%;
   width: 4rem;
   margin-right: 0.75rem;
+  margin-left: -1rem;
 }
 
 .avatar_subsec {
@@ -78,7 +80,10 @@
   float: right;
 }
 
-.currPage a {
+.currPage a,
+.currPage a:hover,
+.currPage a:active,
+.currPage a:focus {
   background-color: #f54748 !important;
   color: #fff !important;
 }

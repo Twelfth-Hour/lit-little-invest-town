@@ -4,7 +4,7 @@ const mapSec = {
   "Consumer Staples": "☕",
   Energy: "⚡",
   Financials: "💸",
-  Healthcare: "🚑",
+  "Health Care": "🚑",
   Industrials: "🏭",
   "Information Technology": "💻",
   Materials: "💎",

@@ -21,7 +21,8 @@ body {
 }
 
 input,
-button {
+button,
+.page-link {
   outline: 0 !important;
   transition: none !important;
 }
@@ -30,6 +31,18 @@ input:hover,
 input:focus,
 input:active {
   box-shadow: none !important;
+}
+
+.page-link {
+  background-color: #fff !important;
+
+}
+
+.page-link:hover,
+.page-link:focus,
+.page-link:active {
+  box-shadow: none !important;
+  background-color: #fff !important;
 }
 
 button:hover,
