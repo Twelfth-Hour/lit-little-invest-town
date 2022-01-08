@@ -93,3 +93,20 @@
   align-items: center;
   margin-bottom: 1rem;
 }
+
+/* responsiveness */
+@media (max-width: 991px) {
+  .works_visual {
+    display: none;
+  }
+
+  .break_sec {
+    display: none;
+  }
+}
+
+@media (max-width: 797px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}

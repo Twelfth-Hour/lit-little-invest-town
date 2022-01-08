@@ -66,3 +66,10 @@ p {
 .page-item.disabled .page-link {
   color: #6c757d !important;
 }
+
+/* responsiveness */
+@media (max-width: 540px) {
+  html, body {
+    margin: 1rem;
+  }
+}

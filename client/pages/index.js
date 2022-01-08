@@ -52,7 +52,7 @@ export default function Home() {
       </Row>
 
       <Row className={styles.container_2} id="how_works">
-        <Col>
+        <Col className={styles.works_visual}>
           <Row style={{ alignItems: "center" }}>
             <Col xs={4} md={4} lg={4}>
               <img
@@ -135,8 +135,7 @@ export default function Home() {
           <Col><img src="/wipro.png" alt="wipro" style={{ width: "120px" }}/></Col>
           <Col><img src="/tcs.png" alt="tcs" style={{ width: "120px" }}/></Col>
           <Col><img src="/infosys.png" alt="infosys" style={{ width: "120px" }}/></Col>
-        </Row>
-        <Row className={styles.company_sec}>
+          <div className={styles.break_sec}></div>
           <Col><img src="/kotak.png" alt="kotak" style={{ width: "120px" }}/></Col>
           <Col><img src="/asian_paints.png" alt="asian paints" style={{ width: "120px" }}/></Col>
           <Col><img src="/airtel.svg" alt="airtel" style={{ width: "85px" }}/></Col>
