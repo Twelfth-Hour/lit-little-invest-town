@@ -9,8 +9,9 @@ const Stock = ({ total, stocks }) => {
     const totalPages = Math.ceil(total / 4);
     /* eslint-disable no-unused-vars */
     const [lst, setList] = useState(initialState);
-    const [sort, setSort] = useState("");
+    const [sort, setSort] = useState("Name");
     const [sortBy, setSortBy] = useState(0);
+    const [risk, setRisk] = useState("");
     const [page, setPage] = useState(1);
 
     /* eslint-enable no-unused-vars */
@@ -68,22 +69,103 @@ const Stock = ({ total, stocks }) => {
                     <h5>Sort</h5>
                     <div>
                     {
-                        sortBy === 0 ? <Button className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}>Name &uarr; </Button> :
-                        <Button className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}>Name &darr; </Button>
+                        sort === "Name" ? <>
+                        {
+                            sortBy === 0 ? <Button className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                            onClick={(e) => {
+                                let by = sortBy === 0 ? 1 : 0;
+                                e.preventDefault();
+                                setSortBy(by);
+                                setSort("Name");
+                            }}
+                            >Name &uarr; </Button> :
+                            <Button className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
+                            onClick={(e) => {
+                                let by = sortBy === 0 ? 1 : 0;
+                                e.preventDefault();
+                                setSortBy(by);
+                                setSort("Name");
+                            }}>Name &darr; </Button>
+                        } </>
+                        : <Button className={`${styles.btn} ${styles.sort_btn}`}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            setSortBy(0);
+                            setSort("Name");
+                        }}>Name &uarr; </Button>
                     }
                     {
-                        sortBy === 0 ? <Button className={`${styles.btn} ${styles.sort_btn}`}>Market Cap &uarr; </Button> :
-                        <Button className={`${styles.btn} ${styles.sort_btn}`}>Market Cap &darr; </Button>
-                    } 
+                        sort === "Cap" ? <>
+                        {
+                            sortBy === 0 ? <Button className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                            onClick={(e) => {
+                                let by = sortBy === 0 ? 1 : 0;
+                                e.preventDefault();
+                                setSortBy(by);
+                                setSort("Cap");
+                            }}
+                            >Market Cap &uarr; </Button> :
+                            <Button className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
+                            onClick={(e) => {
+                                let by = sortBy === 0 ? 1 : 0;
+                                e.preventDefault();
+                                setSortBy(by);
+                                setSort("Cap");
+                            }}>Market Cap &darr; </Button>
+                        } 
+                        </> : <Button className={`${styles.btn} ${styles.sort_btn}`}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            setSortBy(0);
+                            setSort("Cap");
+                        }}>Market Cap &uarr;</Button>
+                    }
+                    
                     </div>           
                 </Row>
                 <br/>
                 <Row className={styles.filter_sec}>
                     <h5>Filter by Risk</h5>
                     <div>
-                        <Button className={`${styles.btn} ${styles.sort_btn}`}>Low</Button>
-                        <Button className={`${styles.btn} ${styles.sort_btn}`}>Medium</Button>
-                        <Button className={`${styles.btn} ${styles.sort_btn}`}>High</Button>
+                        {
+                            risk === "Low" ? <Button className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setRisk("")
+                            }}
+                            >Low</Button> : <Button className={`${styles.btn} ${styles.sort_btn}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setRisk("Low")
+                            }}
+                            >Low</Button>
+                        }
+                        {
+                            risk === "Medium" ? <Button className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setRisk("")
+                            }}
+                            >Medium</Button> : <Button className={`${styles.btn} ${styles.sort_btn}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setRisk("Medium")
+                            }}
+                            >Medium</Button>
+                        }
+                        {
+                            risk === "High" ? <Button className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setRisk("")
+                            }}
+                            >High</Button> : <Button className={`${styles.btn} ${styles.sort_btn}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setRisk("High")
+                            }}
+                            >High</Button>
+                        }
                     </div>
                 </Row>
                 </div>

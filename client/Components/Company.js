@@ -11,10 +11,9 @@ const Company = ({ item }) => {
                     <div className={styles.sec_text}>
                         <p className={styles.company_name}>{item.name}</p>
                         <p className={styles.company_sym}>{item.symbol}</p>
-                        <div>
-                        <p className={styles.descrip}>{item.symbol} belongs to the sub sector {item.sub_sector} which falls under the 
-                    sector of {item.sector} </p>
-                        </div>
+                    </div>
+                    <div>
+                    <p className={styles.descrip}>{item.sub_sector}</p>
                     </div>
                     <div className={styles.avatar_sec}>
                         <img src={item.avatar} className={styles.img} />

@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .company_name {
@@ -29,7 +29,7 @@
 
 .descrip {
   color: #595959;
-  width: 60%;
+  margin-bottom: 1rem !important;
 }
 
 .avatar_sec {
