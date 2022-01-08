@@ -19,101 +19,104 @@ const Detail = ({ stock, similar }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Row xs={12} lg={12} md={12} className={styles.wallpaper}>
-        {/* <Col xs={4} md={4} lg={5}>
-          <img
-            src="/profile_bg.svg"
-            alt="background profile"
-            className={styles.bg_img}
-          />
-        </Col> */}
-        <Col>
-          <h3 className={styles.title}>
-            Nobody beats {stock.profile} in explaining insights of{" "}
-            {stock.symbol}
-          </h3>
-          <Row style={{ marginBottom: "1rem" }}>
-            <Col>
-              <img src={stock.avatar} className={styles.profile_img} />
-            </Col>
-
-            <Col xs={8} md={8} lg={8}>
-              <Row>
-                <span className={styles.name}>{stock.profile}</span>
-              </Row>
-              <Row>
-                <span className={styles.sub}>{stock.sub_sector}</span>
-              </Row>
-              <Row className={styles.price_sec}>
-                <InputGroup>
-                  <InputGroup.Text>Current Stock Price</InputGroup.Text>
-                  <InputGroup.Text className={styles.curr_price}>
-                    {currPrice}
-                  </InputGroup.Text>
-                </InputGroup>
-              </Row>
-            </Col>
-          </Row>
-        </Col>
-
-        <Col xs={4} md={4} lg={4} className={styles.similar_container}>
-          <h3>Similar Profiles</h3>
-          {similar.map((item) => {
-            return (
-              <Row key={item.symbol} style={{ marginTop: ".5rem" }}>
-                <Col xs={3} md={3} lg={3}>
-                  <img src={item.avatar} className={styles.similar_img} />
-                </Col>
-                <Col>
-                  <Row>
-                    <a
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(`${server}/stock/${item.symbol}`, "_blank");
-                      }}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <div>
-                        <span className={styles.similar_title}>
-                          {item.profile}
-                        </span>
-                        {" | "}
-                        <span className={styles.similar_name}>
-                          {item.symbol}
-                        </span>
-                      </div>
-                    </a>
-                  </Row>
-                  <Row>
-                    <span className={styles.similar_name}>{item.name}</span>
-                  </Row>
-                </Col>
-              </Row>
-            );
-          })}
-        </Col>
-      </Row>
-
       <Row>
-        <Col xs={4} md={4} lg={4}>
-          <div className={styles.insight_title}>
-            <span>Insights</span>
-            <div className={styles.triangle_left}></div>
-          </div>
-        </Col>
-        <Col className={styles.insight_container}>
-          <div>
-            {stock.insight.map((item, idx) => {
+        <Row xs={12} lg={12} md={12} className={styles.wallpaper}>
+          <Col>
+            <h3 className={styles.title}>
+              Nobody beats {stock.profile} in explaining insights of{" "}
+              {stock.symbol}
+            </h3>
+            <Row style={{ marginBottom: "1rem" }}>
+              <Col>
+                <img src={stock.avatar} className={styles.profile_img} />
+              </Col>
+
+              <Col xs={12} md={8} lg={8}>
+                <Row>
+                  <span className={styles.name}>{stock.profile}</span>
+                </Row>
+                <Row>
+                  <span className={styles.sub}>{stock.sub_sector}</span>
+                </Row>
+                <Row className={styles.price_sec}>
+                  <InputGroup>
+                    <InputGroup.Text>Current Stock Price</InputGroup.Text>
+                    <InputGroup.Text className={styles.curr_price}>
+                      {currPrice}
+                    </InputGroup.Text>
+                  </InputGroup>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+
+          <Col xs={12} md={5} lg={4} className={styles.similar_container}>
+            <h3>Similar Profiles</h3>
+            {similar.map((item) => {
               return (
-                <div key={idx}>
-                  <span key={idx}>
-                    {idx + 1}. {item}
-                  </span>
-                </div>
+                <Row key={item.symbol} style={{ marginTop: ".5rem" }}>
+                  <Col
+                    xs={3}
+                    md={3}
+                    lg={3}
+                    className={styles.similar_imgparent}
+                  >
+                    <img src={item.avatar} className={styles.similar_img} />
+                  </Col>
+                  <Col>
+                    <Row>
+                      <a
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            `${server}/stock/${item.symbol}`,
+                            "_blank"
+                          );
+                        }}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <div>
+                          <span className={styles.similar_title}>
+                            {item.profile}
+                          </span>
+                          {" | "}
+                          <span className={styles.similar_name}>
+                            {item.symbol}
+                          </span>
+                        </div>
+                      </a>
+                    </Row>
+                    <Row>
+                      <span className={styles.similar_name}>{item.name}</span>
+                    </Row>
+                  </Col>
+                </Row>
               );
             })}
-          </div>
-        </Col>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col xs={12} md={4} lg={4}>
+            <div className={styles.insight_title}>
+              <span>Insights</span>
+              <div className={styles.triangle_left}></div>
+            </div>
+          </Col>
+          <Col className={styles.insight_container}>
+            <div>
+              {stock.insight.map((item, idx) => {
+                return (
+                  <div key={idx}>
+                    <span key={idx}>
+                      {idx + 1}. {item}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </Col>
+        </Row>
       </Row>
     </>
   );

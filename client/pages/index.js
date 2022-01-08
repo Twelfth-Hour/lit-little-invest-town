@@ -101,22 +101,20 @@ export default function Home() {
           <br />
           <Row className={styles.text}>
             <span style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>
-            📌 &nbsp;
-              LIT scales down company profile to a personal level
+              📌 &nbsp; LIT scales down company profile to a personal level
             </span>
             <span style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>
-            📌 &nbsp;
-              Each company is represented by a character with similar finances
+              📌 &nbsp; Each company is represented by a character with similar
+              finances
             </span>
             <span style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>
-            📌 &nbsp;
-              LIT flattens the learning curve to understand company portfolios
-              by converting complex financial jargon into simple everyday words
+              📌 &nbsp; LIT flattens the learning curve to understand company
+              portfolios by converting complex financial jargon into simple
+              everyday words
             </span>
             <span style={{ fontSize: "1.25rem", marginBottom: "0.75rem" }}>
-            📌 &nbsp;
-              LIT simplifies decision making while buying shares for people with
-              a non-finance background
+              📌 &nbsp; LIT simplifies decision making while buying shares for
+              people with a non-finance background
             </span>
           </Row>
         </Col>
@@ -130,17 +128,53 @@ export default function Home() {
           </span>
         </Row>
         <Row className={styles.company_sec}>
-          <Col><img src="/reliance.png" alt="reliance" style={{ width: "120px" }}/></Col>
-          <Col><img src="/hdfc.png" alt="hdfc" style={{ width: "85px" }}/></Col>
-          <Col><img src="/wipro.png" alt="wipro" style={{ width: "120px" }}/></Col>
-          <Col><img src="/tcs.png" alt="tcs" style={{ width: "120px" }}/></Col>
-          <Col><img src="/infosys.png" alt="infosys" style={{ width: "120px" }}/></Col>
+          <Col>
+            <img
+              src="/reliance.png"
+              alt="reliance"
+              style={{ width: "120px" }}
+            />
+          </Col>
+          <Col>
+            <img src="/hdfc.png" alt="hdfc" style={{ width: "85px" }} />
+          </Col>
+          <Col>
+            <img src="/wipro.png" alt="wipro" style={{ width: "120px" }} />
+          </Col>
+          <Col>
+            <img src="/tcs.png" alt="tcs" style={{ width: "120px" }} />
+          </Col>
+          <Col>
+            <img src="/infosys.png" alt="infosys" style={{ width: "120px" }} />
+          </Col>
           <div className={styles.break_sec}></div>
-          <Col><img src="/kotak.png" alt="kotak" style={{ width: "120px" }}/></Col>
-          <Col><img src="/asian_paints.png" alt="asian paints" style={{ width: "120px" }}/></Col>
-          <Col><img src="/airtel.svg" alt="airtel" style={{ width: "85px" }}/></Col>
-          <Col><img src="/maruti.png" alt="maruti suzuki" style={{ width: "120px" }}/></Col>
-          <Col><img src="/whirpool.png" alt="whirpool" style={{ width: "120px" }}/></Col>
+          <Col>
+            <img src="/kotak.png" alt="kotak" style={{ width: "120px" }} />
+          </Col>
+          <Col>
+            <img
+              src="/asian_paints.png"
+              alt="asian paints"
+              style={{ width: "120px" }}
+            />
+          </Col>
+          <Col>
+            <img src="/airtel.svg" alt="airtel" style={{ width: "85px" }} />
+          </Col>
+          <Col>
+            <img
+              src="/maruti.png"
+              alt="maruti suzuki"
+              style={{ width: "120px" }}
+            />
+          </Col>
+          <Col>
+            <img
+              src="/whirpool.png"
+              alt="whirpool"
+              style={{ width: "120px" }}
+            />
+          </Col>
         </Row>
       </Col>
     </div>

@@ -55,228 +55,230 @@ const Stock = ({ total, stocks }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Row>
-        <Col>
-          <h1 style={{ marginBottom: "1rem" }}>Stocks</h1>
-          {lst.map((item) => {
-            return <Company item={item} key={item.symbol} />;
-          })}
-          <Pagination>
-            <Pagination.First
-              onClick={(e) => {
-                e.preventDefault();
-                setPage(1);
-                setList(fullList.slice(0, 4));
-                window.scrollTo(0, 0);
-              }}
-            />
-            <Pagination.Prev
-              disabled={page === 1}
-              onClick={(e) => {
-                e.preventDefault();
-                let cursor = 4 * page;
-                setPage(page - 1);
-                console.log(cursor - 4, cursor);
-                setList(fullList.slice(cursor - 4, cursor));
-                window.scrollTo(0, 0);
-              }}
-            />
-            <Pagination.Item className={styles.currPage}>
-              {page}
-            </Pagination.Item>
-            <Pagination.Next
-              disabled={page === totalPages}
-              onClick={(e) => {
-                e.preventDefault();
-                let cursor = 4 * page;
-                setPage(page + 1);
-                setList(fullList.slice(cursor, cursor + 4));
-                window.scrollTo(0, 0);
-              }}
-            />
-            <Pagination.Last
-              onClick={(e) => {
-                e.preventDefault();
-                let cursor = 4 * (totalPages - 1);
-                setPage(totalPages);
-                setList(fullList.slice(cursor));
-                window.scrollTo(0, 0);
-              }}
-            />
-          </Pagination>
-        </Col>
-        <Col xs={4} md={4} lg={4}>
-          <div className={styles.style_sec}>
-            <Row className={styles.sort_sec}>
-              <h5>Sort</h5>
-              <div>
-                {sort === "name" ? (
-                  <>
-                    {sortBy === 0 ? (
-                      <Button
-                        className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                        onClick={async (e) => {
-                          let by = sortBy === 0 ? 1 : 0;
-                          e.preventDefault();
-                          setSortBy(by);
-                          setSort("name");
-                          await updateStocks("name", by, risk);
-                        }}
-                      >
-                        Name &uarr;{" "}
-                      </Button>
-                    ) : (
-                      <Button
-                        className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
-                        onClick={async (e) => {
-                          let by = sortBy === 0 ? 1 : 0;
-                          e.preventDefault();
-                          setSortBy(by);
-                          setSort("name");
-                          await updateStocks("name", by, risk);
-                        }}
-                      >
-                        Name &darr;{" "}
-                      </Button>
-                    )}{" "}
-                  </>
-                ) : (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setSortBy(0);
-                      setSort("name");
-                      await updateStocks("name", 0, risk);
-                    }}
-                  >
-                    Name &uarr;{" "}
-                  </Button>
-                )}
-                {sort === "marketCap" ? (
-                  <>
-                    {sortBy === 0 ? (
-                      <Button
-                        className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                        onClick={async (e) => {
-                          let by = sortBy === 0 ? 1 : 0;
-                          e.preventDefault();
-                          setSortBy(by);
-                          setSort("marketCap");
-                          await updateStocks("marketCap", by, risk);
-                        }}
-                      >
-                        Market Cap &uarr;{" "}
-                      </Button>
-                    ) : (
-                      <Button
-                        className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
-                        onClick={async (e) => {
-                          let by = sortBy === 0 ? 1 : 0;
-                          e.preventDefault();
-                          setSortBy(by);
-                          setSort("marketCap");
-                          await updateStocks("marketCap", by, risk);
-                        }}
-                      >
-                        Market Cap &darr;{" "}
-                      </Button>
-                    )}
-                  </>
-                ) : (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setSortBy(0);
-                      setSort("marketCap");
-                      await updateStocks("marketCap", 0, risk);
-                    }}
-                  >
-                    Market Cap &uarr;
-                  </Button>
-                )}
-              </div>
-            </Row>
-            <br />
-            <Row className={styles.filter_sec}>
-              <h5>Filter by Risk</h5>
-              <div>
-                {risk === "low" ? (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setRisk("");
-                      let r = risk === "low" ? "" : risk;
-                      await updateStocks(sort, sortBy, r);
-                    }}
-                  >
-                    Low
-                  </Button>
-                ) : (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setRisk("low");
-                      await updateStocks(sort, sortBy, "low");
-                    }}
-                  >
-                    Low
-                  </Button>
-                )}
-                {risk === "medium" ? (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setRisk("");
-                      let r = risk === "medium" ? "" : risk;
-                      await updateStocks(sort, sortBy, r);
-                    }}
-                  >
-                    Medium
-                  </Button>
-                ) : (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setRisk("medium");
-                      await updateStocks(sort, sortBy, "medium");
-                    }}
-                  >
-                    Medium
-                  </Button>
-                )}
-                {risk === "high" ? (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setRisk("");
-                      let r = risk === "high" ? "" : risk;
-                      await updateStocks(sort, sortBy, r);
-                    }}
-                  >
-                    High
-                  </Button>
-                ) : (
-                  <Button
-                    className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      setRisk("high");
-                      await updateStocks(sort, sortBy, "high");
-                    }}
-                  >
-                    High
-                  </Button>
-                )}
-              </div>
-            </Row>
-          </div>
-        </Col>
+        <h1 style={{ marginBottom: "1rem" }}>Stocks</h1>
+        <Row className={styles.stock_page}>
+          <Col>
+            {lst.map((item) => {
+              return <Company item={item} key={item.symbol} />;
+            })}
+            <Pagination>
+              <Pagination.First
+                onClick={(e) => {
+                  e.preventDefault();
+                  setPage(1);
+                  setList(fullList.slice(0, 4));
+                  window.scrollTo(0, 0);
+                }}
+              />
+              <Pagination.Prev
+                disabled={page === 1}
+                onClick={(e) => {
+                  e.preventDefault();
+                  let cursor = 4 * page;
+                  setPage(page - 1);
+                  console.log(cursor - 4, cursor);
+                  setList(fullList.slice(cursor - 4, cursor));
+                  window.scrollTo(0, 0);
+                }}
+              />
+              <Pagination.Item className={styles.currPage}>
+                {page}
+              </Pagination.Item>
+              <Pagination.Next
+                disabled={page === totalPages}
+                onClick={(e) => {
+                  e.preventDefault();
+                  let cursor = 4 * page;
+                  setPage(page + 1);
+                  setList(fullList.slice(cursor, cursor + 4));
+                  window.scrollTo(0, 0);
+                }}
+              />
+              <Pagination.Last
+                onClick={(e) => {
+                  e.preventDefault();
+                  let cursor = 4 * (totalPages - 1);
+                  setPage(totalPages);
+                  setList(fullList.slice(cursor));
+                  window.scrollTo(0, 0);
+                }}
+              />
+            </Pagination>
+          </Col>
+          <Col xs={12} md={12} lg={4}>
+            <div className={styles.style_sec}>
+              <Row className={styles.sort_sec}>
+                <h5>Sort</h5>
+                <div>
+                  {sort === "name" ? (
+                    <>
+                      {sortBy === 0 ? (
+                        <Button
+                          className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                          onClick={async (e) => {
+                            let by = sortBy === 0 ? 1 : 0;
+                            e.preventDefault();
+                            setSortBy(by);
+                            setSort("name");
+                            await updateStocks("name", by, risk);
+                          }}
+                        >
+                          Name &uarr;{" "}
+                        </Button>
+                      ) : (
+                        <Button
+                          className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
+                          onClick={async (e) => {
+                            let by = sortBy === 0 ? 1 : 0;
+                            e.preventDefault();
+                            setSortBy(by);
+                            setSort("name");
+                            await updateStocks("name", by, risk);
+                          }}
+                        >
+                          Name &darr;{" "}
+                        </Button>
+                      )}{" "}
+                    </>
+                  ) : (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setSortBy(0);
+                        setSort("name");
+                        await updateStocks("name", 0, risk);
+                      }}
+                    >
+                      Name &uarr;{" "}
+                    </Button>
+                  )}
+                  {sort === "marketCap" ? (
+                    <>
+                      {sortBy === 0 ? (
+                        <Button
+                          className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                          onClick={async (e) => {
+                            let by = sortBy === 0 ? 1 : 0;
+                            e.preventDefault();
+                            setSortBy(by);
+                            setSort("marketCap");
+                            await updateStocks("marketCap", by, risk);
+                          }}
+                        >
+                          Market Cap &uarr;{" "}
+                        </Button>
+                      ) : (
+                        <Button
+                          className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
+                          onClick={async (e) => {
+                            let by = sortBy === 0 ? 1 : 0;
+                            e.preventDefault();
+                            setSortBy(by);
+                            setSort("marketCap");
+                            await updateStocks("marketCap", by, risk);
+                          }}
+                        >
+                          Market Cap &darr;{" "}
+                        </Button>
+                      )}
+                    </>
+                  ) : (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setSortBy(0);
+                        setSort("marketCap");
+                        await updateStocks("marketCap", 0, risk);
+                      }}
+                    >
+                      Market Cap &uarr;
+                    </Button>
+                  )}
+                </div>
+              </Row>
+              <br />
+              <Row className={styles.filter_sec}>
+                <h5>Filter by Risk</h5>
+                <div>
+                  {risk === "low" ? (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setRisk("");
+                        let r = risk === "low" ? "" : risk;
+                        await updateStocks(sort, sortBy, r);
+                      }}
+                    >
+                      Low
+                    </Button>
+                  ) : (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setRisk("low");
+                        await updateStocks(sort, sortBy, "low");
+                      }}
+                    >
+                      Low
+                    </Button>
+                  )}
+                  {risk === "medium" ? (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setRisk("");
+                        let r = risk === "medium" ? "" : risk;
+                        await updateStocks(sort, sortBy, r);
+                      }}
+                    >
+                      Medium
+                    </Button>
+                  ) : (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setRisk("medium");
+                        await updateStocks(sort, sortBy, "medium");
+                      }}
+                    >
+                      Medium
+                    </Button>
+                  )}
+                  {risk === "high" ? (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setRisk("");
+                        let r = risk === "high" ? "" : risk;
+                        await updateStocks(sort, sortBy, r);
+                      }}
+                    >
+                      High
+                    </Button>
+                  ) : (
+                    <Button
+                      className={`${styles.btn} ${styles.sort_btn}`}
+                      onClick={async (e) => {
+                        e.preventDefault();
+                        setRisk("high");
+                        await updateStocks(sort, sortBy, "high");
+                      }}
+                    >
+                      High
+                    </Button>
+                  )}
+                </div>
+              </Row>
+            </div>
+          </Col>
+        </Row>
       </Row>
     </>
   );

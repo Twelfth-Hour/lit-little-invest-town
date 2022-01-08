@@ -96,3 +96,25 @@
   color: #595959;
   font-size: 13px;
 }
+
+/* responsiveness */
+@media (max-width: 820px) and (min-width: 540px) {
+  .similar_container {
+    width: 100%;
+  }
+
+  .similar_imgparent {
+    width: 16.66666667%;
+  }
+}
+
+@media (max-width: 767px) {
+  .insight_title {
+    width: 50%;
+  }
+
+  .insight_container {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}

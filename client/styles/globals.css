@@ -68,8 +68,9 @@ p {
 }
 
 /* responsiveness */
-@media (max-width: 540px) {
-  html, body {
+@media (max-width: 620px) {
+  html,
+  body {
     margin: 1rem;
   }
 }

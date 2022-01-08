@@ -96,7 +96,7 @@ const Company = ({ item }) => {
             </div>
           </div>
         </Col>
-        <Col xs={3} md={3} lg={3}>
+        <Col xs={12} md={3} lg={3}>
           <Button
             className={styles.btn}
             onClick={(e) => {
