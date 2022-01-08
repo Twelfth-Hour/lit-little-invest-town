@@ -40,3 +40,59 @@
 .curr_price {
   background: none !important;
 }
+
+.insight_container {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  color: #2e2e2e;
+  box-shadow: 5px 5px 10px 0 #fee7e7;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.insight_title {
+  background-color: #f54748;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-bottom: 0.5rem;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+.triangle_left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 32px solid #fff5f5;
+  border-bottom: 15px solid transparent;
+}
+
+.similar_img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.similar_container {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: #2e2e2e;
+  box-shadow: 5px 5px 10px 0 #fee7e7;
+  margin-bottom: 2rem;
+}
+
+.similar_title {
+  color: #2e2e2e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.similar_name {
+  color: #595959;
+  font-size: 13px;
+}
