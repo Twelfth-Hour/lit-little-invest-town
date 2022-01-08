@@ -31,7 +31,8 @@ const Footer = () => {
         </span>
         <br />
         <span className={styles.text}>
-          Made with ❣️ by Twelfth Hour - Aemie Jariwala and Sahil Bondre
+          Made with ❣️ by <span className={styles.highlight}>Twelfth Hour</span>{" "}
+          - Aemie Jariwala and Sahil Bondre
         </span>
       </footer>
     </div>

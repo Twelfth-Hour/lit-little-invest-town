@@ -1,0 +1,71 @@
+.main {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  color: #2e2e2e;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px 0 #fee7e7;
+  margin-bottom: 1.5rem;
+}
+
+.sec_text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.company_name {
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 0.75rem;
+}
+
+.company_sym {
+  opacity: 80%;
+}
+
+.avatar_sec {
+  display: flex;
+  align-items: flex-end;
+}
+
+.img {
+  border-radius: 50%;
+  width: 4rem;
+  margin-right: 0.75rem;
+}
+
+.avatar_subsec {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.info_sec {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info_sec button {
+  background: none !important;
+  border: none !important;
+}
+
+.profile {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #f54748;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}

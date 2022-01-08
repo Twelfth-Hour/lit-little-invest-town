@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import { Row, Col, Button } from "react-bootstrap";
 import Image from "next/image";
 import Landing from "../public/landing.png";
+import { server } from "../config/server.js";
 
 // red - f54748, heading - 2e2e2e, text - 595959, background - fff5f5, yellow - fdc55e
 export default function Home() {
@@ -30,7 +31,15 @@ export default function Home() {
             </span>
           </Row>
           <Row>
-            <Button className={styles.btn}>View Stock Profiles</Button>
+            <Button
+              className={styles.btn}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = `${server}/stocks`;
+              }}
+            >
+              View Stock Profiles
+            </Button>
           </Row>
         </Col>
         <Col>

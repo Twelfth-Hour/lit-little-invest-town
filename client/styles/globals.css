@@ -30,3 +30,7 @@ input:focus,
 input:active {
   box-shadow: none !important;
 }
+
+p {
+  margin-bottom: 0 !important;
+}
