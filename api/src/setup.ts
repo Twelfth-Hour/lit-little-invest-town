@@ -127,7 +127,7 @@ const setupDB = async () => {
           incomeStatements.push({
             statement: {
               year: data.year || 0,
-              total_revenue: data.revenue || 0,
+              total_revenue: data.total_revenue || 0,
               raw_material_cost: data.raw_material_cost || 0,
               power_cost: data.power_cost || 0,
               employee_cost: data.employee_cost || 0,

@@ -8,6 +8,7 @@ import setupDB from "./setup";
 import companyRouter from "./routes/company.route";
 import balanceSheetRouter from "./routes/balance_sheet.route";
 import incomeStatementRouter from "./routes/income_statement.route";
+import insightRouter from "./routes/insight.route";
 
 // Constants
 const IS_PRODUCTION = process.env.NODE_ENV == "production";
@@ -31,6 +32,7 @@ app.use(express.json());
 app.use("/api/company", companyRouter);
 app.use("/api/balance", balanceSheetRouter);
 app.use("/api/income", incomeStatementRouter);
+app.use("/api/insights", insightRouter);
 
 app.get("/", async (_, res) => {
   res.send("Hello World!");
