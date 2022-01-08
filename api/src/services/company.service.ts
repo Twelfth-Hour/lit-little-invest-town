@@ -9,7 +9,7 @@ export const getCompaniesByRisk = async (risk: string): Promise<Company[]> => {
   return await Company.findAll({ where: { risk } });
 };
 
-export const getCompanyBySymbol = async (
+export const getCompanyBySymbolService = async (
   symbol: string
 ): Promise<Company | null> => {
   return await Company.findOne({ where: { symbol } });
