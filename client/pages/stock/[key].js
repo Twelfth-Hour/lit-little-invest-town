@@ -1,22 +1,69 @@
 import Head from "next/head";
 import { server } from "../../config/server.js";
+import names from "../../config/names.js";
 import { Row, Col, InputGroup } from "react-bootstrap";
 import styles from "../../styles/Profile.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
+import Avatar from "boring-avatars";
 
 const Detail = ({ stock, similar }) => {
   /* eslint-disable no-unused-vars */
   const [currPrice, setCurr] = useState(stock.currPrice);
+  const [profile, setProfile] = useState("");
+  const isLetter = (c) => {
+    return c.toLowerCase() != c.toUpperCase();
+  };
+
+  const firstAlpha = (s) => {
+    let length = s.length;
+    for (let idx = 0; idx < length; ++idx) {
+      if (isLetter(s[idx])) return s[idx];
+    }
+  };
+
+  const hashCode = (s) => {
+    let h = 0;
+    for (let i = 0; i < s.length; i++)
+      h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
+
+    return h;
+  };
+
+  const capitalizeFirstLetter = (string) => {
+    string = string.toLowerCase();
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
+  const getName = (sym) => {
+    let hash = hashCode(sym);
+    let charFirst = firstAlpha(sym);
+    let list_ = names.filter((item) => item[0] === charFirst);
+    let length = list_.length;
+
+    if (length === 0) return capitalizeFirstLetter(sym);
+    let z = length / hash;
+    if (z < 0) z = z * -1;
+    let m = -1 * Math.floor(Math.log(z) / Math.log(10) + 1);
+
+    for (let idx = 0; idx < m; ++idx) z = z * 10;
+    let name = list_[Math.floor(z * length)];
+    return name;
+  };
+
+  useEffect(() => {
+    let name = getName(stock.symbol);
+    setProfile(name);
+  }, []);
 
   setInterval(async () => {
     let key = stock.symbol;
     let response = await fetch(`${server}/api/stock_price`, {
       method: "POST",
-      body: key
+      body: key,
     });
-  
-    let {data, err} = await response.json();
+
+    let { data, err } = await response.json();
     let price = 0;
     if (data) price = data;
     if (price !== 0) {
@@ -39,26 +86,36 @@ const Detail = ({ stock, similar }) => {
         <Row xs={12} lg={12} md={12} className={styles.wallpaper}>
           <Col>
             <h3 className={styles.title}>
-              Nobody beats {stock.profile} in explaining insights of{" "}
-              {stock.symbol}
+              Nobody beats {profile} in explaining insights of {stock.symbol}
             </h3>
             <Row style={{ marginBottom: "1rem" }}>
-              <Col>
-                <img src={stock.avatar} className={styles.profile_img} />
+              <Col className={styles.profile_img}>
+                <Avatar
+                  size={100}
+                  name={profile}
+                  variant="beam"
+                  colors={[
+                    "#302727",
+                    "#BA2D2D",
+                    "#F2511B",
+                    "#F2861B",
+                    "#C7C730",
+                  ]}
+                />
               </Col>
 
-              <Col xs={12} md={8} lg={8}>
+              <Col xs={12} md={10} lg={9}>
                 <Row>
-                  <span className={styles.name}>{stock.profile}</span>
+                  <span className={styles.name}>{profile}</span>
                 </Row>
                 <Row>
                   <span className={styles.sub}>{stock.sub_sector}</span>
                 </Row>
                 <Row className={styles.price_sec}>
                   <InputGroup>
-                    <InputGroup.Text>Current Stock Price</InputGroup.Text>
+                    <InputGroup.Text>Risk</InputGroup.Text>
                     <InputGroup.Text className={styles.curr_price}>
-                      {currPrice}
+                      {capitalizeFirstLetter(stock.risk)}
                     </InputGroup.Text>
                   </InputGroup>
                 </Row>
@@ -77,7 +134,18 @@ const Detail = ({ stock, similar }) => {
                     lg={3}
                     className={styles.similar_imgparent}
                   >
-                    <img src={item.avatar} className={styles.similar_img} />
+                    <Avatar
+                      size={45}
+                      name={getName(item.symbol)}
+                      variant="beam"
+                      colors={[
+                        "#302727",
+                        "#BA2D2D",
+                        "#F2511B",
+                        "#F2861B",
+                        "#C7C730",
+                      ]}
+                    />
                   </Col>
                   <Col>
                     <Row>
@@ -93,7 +161,7 @@ const Detail = ({ stock, similar }) => {
                       >
                         <div>
                           <span className={styles.similar_title}>
-                            {item.profile}
+                            {getName(item.symbol)}
                           </span>
                           {" | "}
                           <span className={styles.similar_name}>
@@ -121,28 +189,28 @@ const Detail = ({ stock, similar }) => {
           </Col>
           <Col className={styles.insight_container}>
             <div>
+              <b>In this year, {profile} has:</b> <br />
               {stock.insight.map((item, idx) => {
                 return (
                   <div key={idx} className={styles.insight_point}>
-                    <span key={idx}>
-                      {idx + 1}. {item.text}
-                    </span>
-                  
-                    {
-                      item.info.length !== 0 ? <>
-                      <button data-tip data-for={`${stock.symbol}-${idx}`}>
-                  <img src="/info.svg" />
-                </button><ReactTooltip
-                      id={`${stock.symbol}-${idx}`}
-                      type="info"
-                      effect="solid"
-                    >
-                      <span>
-                        {item.info}
-                      </span>
-                    </ReactTooltip></> : <></>
-                    }
-                      
+                    <span key={idx}>{item.text}</span>
+
+                    {item.info.length !== 0 ? (
+                      <>
+                        <button data-tip data-for={`${stock.symbol}-${idx}`}>
+                          <img src="/info.svg" />
+                        </button>
+                        <ReactTooltip
+                          id={`${stock.symbol}-${idx}`}
+                          type="info"
+                          effect="solid"
+                        >
+                          <span>{item.info}</span>
+                        </ReactTooltip>
+                      </>
+                    ) : (
+                      <></>
+                    )}
                   </div>
                 );
               })}
@@ -156,83 +224,73 @@ const Detail = ({ stock, similar }) => {
 
 export default Detail;
 
-export const getServerSideProps = async(context) => {
+export const getServerSideProps = async (context) => {
   let key = context.query.key;
 
   let response = await fetch(`${server}/api/stock_price`, {
     method: "POST",
-    body: key
+    body: key,
   });
 
-  let {data, err} = await response.json();
+  let { data } = await response.json();
   let currPrice = 0;
   if (data) currPrice = data;
 
-  let insight = [
-    {
-      text: "Alice makes and sells oil and electricity",
-      info: ""
-    },
-    {
-      text: "In 2021 Alice made 50 Lakh Rupees",
-      info: "This is her total revene in 2021"
-    },
-    {
-      text: "Last year she made 61 Lakh Rupees",
-      info: "This is her total revene in 2020"
-    },
-    {
-      text: "Out of this, she could save up 5 Lakh Rupees which is 20% more than what she saved last year",
-      info: ""
-    },
-    {
-      text: "Alice bought a new oil making machine for 3 Lakh Rupees",
-      info: ""
-    },
-    {
-      text: "Alice also invested 5 Lakh rupees in Mutual Funds",
-      info: ""
-    },
-    {
-      text: "Alice also paid her loan by 2 Lakh rupees and her loan now is 3.5 Lakhs",
-      info: ""
-    }
-  ]
+  response = await fetch(`${server}/api/insight`, {
+    method: "POST",
+    body: JSON.stringify({
+      company: key,
+    }),
+  });
 
-  let similarProfiles = [
-    {
-      name: "Reliance Industries Limited",
-      symbol: "RELIANCE",
-      profile: "Raveen",
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C4D03AQGuSVxEgwSDaA/profile-displayphoto-shrink_800_800/0/1616911585841?e=1646870400&v=beta&t=cxUKCI7jqSaOEak9BegiCn7MivEturemGIGAPKv2JTI",
-    },
-    {
-      name: "Kotak Mahindra Bank Limited",
-      symbol: "KOTAKBANK",
-      profile: "Kshitij",
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C4E03AQG-PDOJqcsBtA/profile-displayphoto-shrink_800_800/0/1627758064351?e=1646870400&v=beta&t=tbC0f2FGiiXfa0SImWFIp-eWRl_Ur2QxARj1LVsp6w4",
-    },
-    {
-      name: "Sun Pharmaceutical Industries Limited",
-      symbol: "SUNPHARMA",
-      profile: "Sunny",
-      avatar:
-        "https://media-exp1.licdn.com/dms/image/C5103AQHTbCiP412O8w/profile-displayphoto-shrink_800_800/0/1580654448686?e=1646870400&v=beta&t=lppNzlQdBstfRP_4yHb4Qsa6HkQSdxZrTMPdbqRlkuA",
-    },
+  let val = await response.json();
+
+  let insight = [];
+  let infoMap = [
+    "Revenue earned by the company which is the total amount of money generated by the business",
+    "The cost of components that go into manufacture of the product",
+    "Cost of power consumption",
+    "Employee and administrative expenses",
+    "Total Profit = Revenue - Expenses - Taxes",
+    "Current Assets including cash, cash equivalence, stock inventory",
+    "Long Term Investment made by the company",
+    "Debts taken by the company",
   ];
+  val.data.forEach((item, idx) => {
+    let obj = {
+      text: item,
+      info: infoMap[idx],
+    };
+    insight.push(obj);
+  });
+
+  response = await fetch(`${server}/api/similar`, {
+    method: "POST",
+    body: JSON.stringify({
+      company: key,
+    }),
+  });
+
+  val = await response.json();
+  let similarProfiles = val.data.slice(0, 3);
+
+  response = await fetch(`${server}/api/company`, {
+    method: "POST",
+    body: JSON.stringify({
+      company: key,
+    }),
+  });
+
+  val = await response.json();
 
   let stock = {
-    name: "Tata Consultancy Services Limited",
+    name: val.data.name,
     symbol: key,
-    profile: "Tania",
-    avatar:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFiI0cCzdX-Qw/profile-displayphoto-shrink_800_800/0/1597827671191?e=1646870400&v=beta&t=ZQ9xOcOI5yA_22mDLOeMq_UBdl2KKxK0atR2H7RddkM",
-    sector: "Information Technology",
-    sub_sector: "IT Services & Consulting",
+    sector: val.data.sector,
+    sub_sector: val.data.sub_sector,
+    risk: val.data.risk,
     insight,
-    currPrice
+    currPrice,
   };
 
   return {

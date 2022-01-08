@@ -28,11 +28,6 @@
   color: #595959;
 }
 
-.profile_img {
-  width: 150px;
-  border-radius: 50%;
-}
-
 .price_sec {
   margin-top: 1rem;
 }
@@ -100,6 +95,10 @@
 .insight_point button {
   background: none !important;
   border: none !important;
+}
+
+.profile_img svg {
+  margin-bottom: 1rem;
 }
 
 /* responsiveness */

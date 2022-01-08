@@ -63,7 +63,10 @@ const Company = ({ item }) => {
             <p className={styles.company_sym}>{item.symbol}</p>
           </div>
           <div>
-            <p className={styles.descrip}>{item.sub_sector}</p>
+            <p className={styles.descrip}>
+              {item.sub_sector} is the sub-sector to which our beloved company
+              is part of!
+            </p>
           </div>
           <div className={styles.avatar_sec}>
             <Avatar
@@ -90,7 +93,7 @@ const Company = ({ item }) => {
                 </ReactTooltip>
               </div>
 
-              <p>
+              <p style={{ marginBottom: "1rem" }}>
                 {mapSec[item.sector]} {item.sector}
               </p>
             </div>

@@ -20,13 +20,7 @@ const Stock = ({ total, stocks }) => {
   const updateStocks = async (sort, sortBy, risk) => {
     let reverse = sortBy === 0 ? false : true;
     let uri = `${server}/api/companies`;
-    console.log(
-      JSON.stringify({
-        sort,
-        reverse,
-        risk,
-      })
-    );
+
     let response = await fetch(uri, {
       method: "POST",
       body: JSON.stringify({
@@ -76,7 +70,6 @@ const Stock = ({ total, stocks }) => {
                   e.preventDefault();
                   let cursor = 4 * page;
                   setPage(page - 1);
-                  console.log(cursor - 4, cursor);
                   setList(fullList.slice(cursor - 4, cursor));
                   window.scrollTo(0, 0);
                 }}

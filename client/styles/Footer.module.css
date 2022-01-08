@@ -34,3 +34,10 @@
 .highlight {
   color: #f54748 !important;
 }
+
+/* responsiveness */
+@media (max-width: 797px) {
+  .footer {
+    text-align: left;
+  }
+}

@@ -1,11 +1,4 @@
-import {
-  Navbar,
-  Container,
-  Nav,
-  InputGroup,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import { useState } from "react";
 import styles from "../styles/Header.module.css";
 
@@ -29,15 +22,15 @@ const Header = () => {
             <Nav.Link href="/stocks" className={styles.link}>
               Stocks
             </Nav.Link>
-            <Nav.Link href={`/lit-api`} className={styles.link}>
+            {/* <Nav.Link href={`/lit-api`} className={styles.link}>
               Developers
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link href={`/#how_works`} className={styles.link}>
               How LIT Works
             </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
-            <InputGroup className="mb-3">
+            {/* <InputGroup className="mb-3">
               <InputGroup.Text id="basic-addon1">
                 <img
                   src="/search.svg"
@@ -52,7 +45,7 @@ const Header = () => {
                 onChange={(e) => setSearch(e.target.value)}
               />
               <Button className={styles.search_btn}>Search</Button>
-            </InputGroup>
+            </InputGroup> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
