@@ -16,3 +16,9 @@
   margin: 0 !important;
   margin-bottom: 1.5rem !important;
 }
+
+.search_btn {
+  background-color: #fdc55e !important;
+  border-color: #fdc55e !important;
+  color: #674913 !important;
+}

@@ -4,10 +4,16 @@ import {
   Nav,
   InputGroup,
   FormControl,
+  Button,
 } from "react-bootstrap";
+import { useState } from "react";
 import styles from "../styles/Header.module.css";
 
 const Header = () => {
+  /* eslint-disable no-unused-vars */
+  const [search, setSearch] = useState("");
+
+  /* eslint-enable no-unused-vars */
   return (
     <Navbar className={styles.navbar} expand="lg" sticky="top">
       <Container>
@@ -43,7 +49,9 @@ const Header = () => {
                 placeholder="Search Stocks"
                 aria-label="Search Stocks"
                 aria-describedby="basic-addon1"
+                onChange={(e) => setSearch(e.target.value)}
               />
+              <Button className={styles.search_btn}>Search</Button>
             </InputGroup>
           </Nav>
         </Navbar.Collapse>

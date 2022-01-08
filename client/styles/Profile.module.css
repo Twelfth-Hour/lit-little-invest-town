@@ -1,0 +1,42 @@
+.wallpaper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e3afaf;
+  margin-bottom: 2rem;
+}
+
+.bg_img {
+  width: 80%;
+}
+
+.title {
+  font-family: inherit;
+  font-size: 36px;
+  color: #2e2e2e;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-family: inherit;
+  font-size: 25px;
+  color: #2e2e2e;
+}
+
+.sub {
+  font-family: inherit;
+  font-size: 18px;
+  color: #595959;
+}
+
+.profile_img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.price_sec {
+  margin-top: 1rem;
+}
+
+.curr_price {
+  background: none !important;
+}

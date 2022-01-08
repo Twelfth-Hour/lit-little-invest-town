@@ -1,0 +1,103 @@
+import Head from "next/head";
+// import { server } from "../../config/server.js";
+import { Row, Col, InputGroup } from "react-bootstrap";
+import styles from "../../styles/Profile.module.css";
+import { useState } from "react";
+
+const Detail = ({ stock }) => {
+  /* eslint-disable no-unused-vars */
+  const [currPrice, setCurr] = useState(stock.currPrice);
+
+  /* eslint-enable no-unused-vars */
+  return (
+    <>
+      <Head>
+        <title>LIT: {stock.symbol} Insight</title>
+        <meta
+          name="description"
+          content="Stock insights that you can understand"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Row xs={12} lg={12} md={12} className={styles.wallpaper}>
+        <Col>
+          <img
+            src="/profile_bg.svg"
+            alt="background profile"
+            className={styles.bg_img}
+          />
+        </Col>
+        <Col xs={12} md={9} lg={7}>
+          <h3 className={styles.title}>
+            Nobody beats {stock.profile} in explaining insights of{" "}
+            {stock.symbol}
+          </h3>
+          <Row style={{ marginBottom: "1rem" }}>
+            <Col>
+              <img src={stock.avatar} className={styles.profile_img} />
+            </Col>
+
+            <Col xs={8} md={8} lg={8}>
+              <Row>
+                <span className={styles.name}>{stock.profile}</span>
+              </Row>
+              <Row>
+                <span className={styles.sub}>{stock.sub_sector}</span>
+              </Row>
+              <Row className={styles.price_sec}>
+                <InputGroup>
+                  <InputGroup.Text>Current Stock Price</InputGroup.Text>
+                  <InputGroup.Text className={styles.curr_price}>
+                    {currPrice}
+                  </InputGroup.Text>
+                </InputGroup>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={3} md={3} lg={3}>
+          <div className={styles.insight_title}>Insights</div>
+        </Col>
+        <Col>
+          <div className={styles.insight_container}></div>
+        </Col>
+      </Row>
+    </>
+  );
+};
+
+export default Detail;
+
+export const getServerSideProps = (context) => {
+  let key = context.query.key;
+  let insight = [
+    "Alice makes and sells oil and electricity",
+    "In 2021 Alice made 50 Lakh Rupees",
+    "Last year she made 61 Lakh Rupees",
+    "Out of this, she could save up 5 Lakh Rupees which is 20% more than what she saved last year",
+    "Alice bought a new oil making machine for 3 Lakh Rupees",
+    "Alice also invested 5 Lakh rupees in Mutual Funds",
+    "Alice also paid her loan by 2 Lakh rupees and her loan now is 3.5 Lakhs",
+  ];
+
+  let stock = {
+    name: "Tata Consultancy Services Limited",
+    symbol: key,
+    profile: "Tania",
+    avatar:
+      "https://media-exp1.licdn.com/dms/image/C4D03AQFiI0cCzdX-Qw/profile-displayphoto-shrink_800_800/0/1597827671191?e=1646870400&v=beta&t=ZQ9xOcOI5yA_22mDLOeMq_UBdl2KKxK0atR2H7RddkM",
+    sector: "Information Technology",
+    sub_sector: "IT Services & Consulting",
+    insight,
+    currPrice: 197308,
+  };
+
+  return {
+    props: {
+      stock,
+    },
+  };
+};

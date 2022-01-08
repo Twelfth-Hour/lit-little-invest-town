@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .company_name {
@@ -79,8 +79,8 @@
 }
 
 .currPage a {
-    background-color: #f54748 !important;
-    color: #fff !important;
+  background-color: #f54748 !important;
+  color: #fff !important;
 }
 
 .style_sec {
@@ -99,7 +99,7 @@
 .sort_btn:active,
 .sort_btn:focus {
   float: left;
-  margin: .25rem;
+  margin: 0.25rem;
   background-color: #fff !important;
   border: 1px solid #f54748 !important;
   color: #f54748 !important;

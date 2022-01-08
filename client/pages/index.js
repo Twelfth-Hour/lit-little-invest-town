@@ -55,21 +55,41 @@ export default function Home() {
         <Col>
           <Row style={{ alignItems: "center" }}>
             <Col xs={4} md={4} lg={4}>
-            <img src="/coffee.png" alt="coffee icon" style={{ width: "10rem" }}/>
+              <img
+                src="/coffee.png"
+                alt="coffee icon"
+                style={{ width: "10rem" }}
+              />
             </Col>
-            <Col><span className={styles.imageHeading}>Coffee @ 200Rs 🥵</span></Col>
+            <Col>
+              <span className={styles.imageHeading}>Coffee @ 200Rs 🥵</span>
+            </Col>
           </Row>
           <Row style={{ alignItems: "center" }}>
             <Col xs={4} md={4} lg={4}>
-            <img src="/mobile.png" alt="mobile icon" style={{ width: "10rem" }}/>
+              <img
+                src="/mobile.png"
+                alt="mobile icon"
+                style={{ width: "10rem" }}
+              />
             </Col>
-            <Col><span className={styles.imageHeading}>iPhone @ 20K Rs 🤑</span></Col>
+            <Col>
+              <span className={styles.imageHeading}>iPhone @ 20K Rs 🤑</span>
+            </Col>
           </Row>
           <Row style={{ alignItems: "center" }}>
             <Col xs={4} md={4} lg={4}>
-            <img src="/laptop.png" alt="laptop icon" style={{ width: "10rem" }}/>
+              <img
+                src="/laptop.png"
+                alt="laptop icon"
+                style={{ width: "10rem" }}
+              />
             </Col>
-            <Col><span className={styles.imageHeading}>TCS Share @ 3800 Rs 🤔</span></Col>
+            <Col>
+              <span className={styles.imageHeading}>
+                TCS Share @ 3800 Rs 🤔
+              </span>
+            </Col>
           </Row>
         </Col>
         <Col>
@@ -102,8 +122,8 @@ export default function Home() {
                 alt="pointer"
                 style={{ width: "1.5rem" }}
               />{" "}
-               LIT flattens the learning curve to understand company portfolios by 
-               converting complex financial jargon into simple everyday words
+              LIT flattens the learning curve to understand company portfolios
+              by converting complex financial jargon into simple everyday words
             </span>
             <span>
               <img
@@ -111,7 +131,8 @@ export default function Home() {
                 alt="pointer"
                 style={{ width: "1.5rem" }}
               />{" "}
-               LIT simplifies decision making while buying shares for people with a non-finance background
+              LIT simplifies decision making while buying shares for people with
+              a non-finance background
             </span>
           </Row>
         </Col>
