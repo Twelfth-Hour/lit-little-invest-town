@@ -1,15 +1,20 @@
 import styles from "../styles/Stock.module.css";
-import { Button } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
 import ReactTooltip from "react-tooltip";
+import mapSec from "./SectorMap";
 
 const Company = ({ item }) => {
     return (
         <>
-            <div className={styles.main} key={item.symbol}>
-                <div>
+            <Row className={styles.main} key={item.symbol}>
+                <Col>
                     <div className={styles.sec_text}>
                         <p className={styles.company_name}>{item.name}</p>
                         <p className={styles.company_sym}>{item.symbol}</p>
+                        <div>
+                        <p className={styles.descrip}>{item.symbol} belongs to the sub sector {item.sub_sector} which falls under the 
+                    sector of {item.sector} </p>
+                        </div>
                     </div>
                     <div className={styles.avatar_sec}>
                         <img src={item.avatar} className={styles.img} />
@@ -29,14 +34,14 @@ const Company = ({ item }) => {
                                 </ReactTooltip>
                             </div>
 
-                            <p>{item.sub_sector}</p>
+                            <p>{mapSec[item.sector]} {item.sector}</p>
                         </div>
                     </div>
-                </div>
-                <div>
+                </Col>
+                <Col xs={3} md={3} lg={3}>
                     <Button className={styles.btn}>Analyze</Button>
-                </div>
-            </div>
+                </Col>
+            </Row>
         </>
     );
 }

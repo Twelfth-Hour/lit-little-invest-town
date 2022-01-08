@@ -51,26 +51,32 @@ export default function Home() {
         </Col>
       </Row>
 
-      <Row className={styles.container}>
+      <Row className={styles.container_2} id="how_works">
         <Col>
-          <img
-            src="/how_works.png"
-            alt="How LIT Works image"
-            className={styles.how_works_img}
-          />
+          <Row style={{ alignItems: "center" }}>
+            <Col xs={4} md={4} lg={4}>
+            <img src="/coffee.png" alt="coffee icon" style={{ width: "10rem" }}/>
+            </Col>
+            <Col><span className={styles.imageHeading}>Coffee @ 200Rs 🥵</span></Col>
+          </Row>
+          <Row style={{ alignItems: "center" }}>
+            <Col xs={4} md={4} lg={4}>
+            <img src="/mobile.png" alt="mobile icon" style={{ width: "10rem" }}/>
+            </Col>
+            <Col><span className={styles.imageHeading}>iPhone @ 20K Rs 🤑</span></Col>
+          </Row>
+          <Row style={{ alignItems: "center" }}>
+            <Col xs={4} md={4} lg={4}>
+            <img src="/laptop.png" alt="laptop icon" style={{ width: "10rem" }}/>
+            </Col>
+            <Col><span className={styles.imageHeading}>TCS Share @ 3800 Rs 🤔</span></Col>
+          </Row>
         </Col>
         <Col>
           <Row className={styles.heading}>
             <p>
               How does <span className={styles.highlight}>LIT</span> work❓
             </p>
-          </Row>
-          <Row className={styles.text}>
-            <span>
-              <span className={styles.highlight}>Little Invest Town</span> maps
-              complex stock price data to an everyday scale that the result of
-              us can understand
-            </span>
           </Row>
           <br />
           <Row className={styles.text}>
@@ -80,8 +86,7 @@ export default function Home() {
                 alt="pointer"
                 style={{ width: "1.5rem" }}
               />{" "}
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto
+              LIT scales down company profile to a personal level
             </span>
             <span>
               <img
@@ -89,8 +94,7 @@ export default function Home() {
                 alt="pointer"
                 style={{ width: "1.5rem" }}
               />{" "}
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto
+              Each company is represented by a character with similar finances
             </span>
             <span>
               <img
@@ -98,14 +102,22 @@ export default function Home() {
                 alt="pointer"
                 style={{ width: "1.5rem" }}
               />{" "}
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto
+               LIT flattens the learning curve to understand company portfolios by 
+               converting complex financial jargon into simple everyday words
+            </span>
+            <span>
+              <img
+                src="/pointer.svg"
+                alt="pointer"
+                style={{ width: "1.5rem" }}
+              />{" "}
+               LIT simplifies decision making while buying shares for people with a non-finance background
             </span>
           </Row>
         </Col>
       </Row>
 
-      <Col id="how_works">
+      <Col>
         <Row className={`${styles.second_heading}`}>
           <span>
             Analyze the <span className={styles.highlight}>top companies</span>{" "}

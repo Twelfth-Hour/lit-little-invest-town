@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   box-shadow: 5px 5px 10px 0 #fee7e7;
   margin-bottom: 1.5rem;
 }
@@ -26,6 +25,11 @@
 
 .company_sym {
   opacity: 80%;
+}
+
+.descrip {
+  color: #595959;
+  width: 60%;
 }
 
 .avatar_sec {
@@ -71,9 +75,37 @@
   border: none !important;
   color: #fff !important;
   font-weight: 600;
+  float: right;
 }
 
 .currPage a {
-    background-color: #fdc55e !important;
+    background-color: #f54748 !important;
     color: #fff !important;
+}
+
+.style_sec {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  color: #2e2e2e;
+  box-shadow: 5px 5px 10px 0 #fee7e7;
+  height: auto;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.sort_btn,
+.sort_btn:hover,
+.sort_btn:active,
+.sort_btn:focus {
+  float: left;
+  margin: .25rem;
+  background-color: #fff !important;
+  border: 1px solid #f54748 !important;
+  color: #f54748 !important;
+}
+
+.sort_btn.active {
+  background-color: #f54748 !important;
+  color: #fff !important;
 }
