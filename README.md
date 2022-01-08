@@ -44,15 +44,3 @@ Scale down company profiles and map them to individual financial profiles.
 2. BSE/NSE Endpoints for Stock Prices
 3. Company Reports
 4. Web Scrape
-
-1. ☎ Communication Services
-2. 🚗 Consumer Discretionary
-3. ☕ Consumer Staples
-4. ⚡ Energy
-5. 💸 Financials
-6. 🚑 Healthcare
-7. 🏭 Industrials
-8. 💻 Information Technology
-9. 💎 Materials
-10. 🏠 Real Estate
-11. 💧 Utilities
