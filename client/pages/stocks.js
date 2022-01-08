@@ -5,18 +5,48 @@ import Company from "../Components/Company.js";
 import { server } from "../config/server.js";
 import styles from "../styles/Stock.module.css";
 
-
 const Stock = ({ total, stocks }) => {
   const [page, setPage] = useState(1);
   const initialState = stocks.slice(0, 4);
-  const totalPages = Math.ceil(total / 4);
+  const [totalPages, setTP] = useState(Math.ceil(total / 4));
   /* eslint-disable no-unused-vars */
   const [lst, setList] = useState(initialState);
-  const [sort, setSort] = useState("Name");
+  const [fullList, setFullList] = useState(stocks);
+  const [sort, setSort] = useState("name");
   const [sortBy, setSortBy] = useState(0);
   const [risk, setRisk] = useState("");
 
   /* eslint-enable no-unused-vars */
+  const updateStocks = async (sort, sortBy, risk) => {
+    let reverse = sortBy === 0 ? false : true;
+    let uri = `${server}/api/companies`;
+    console.log(
+      JSON.stringify({
+        sort,
+        reverse,
+        risk,
+      })
+    );
+    let response = await fetch(uri, {
+      method: "POST",
+      body: JSON.stringify({
+        sort,
+        reverse,
+        risk,
+      }),
+    });
+
+    let { data, err } = await response.json();
+    if (data) {
+      setList(data.slice(0, 4));
+      setFullList(data);
+      setPage(1);
+      setTP(Math.ceil(data.length / 4));
+    } else {
+      alert(err);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -35,8 +65,8 @@ const Stock = ({ total, stocks }) => {
               onClick={(e) => {
                 e.preventDefault();
                 setPage(1);
-                setList(stocks.slice(0, 4));
-                window.scrollTo(0,0);
+                setList(fullList.slice(0, 4));
+                window.scrollTo(0, 0);
               }}
             />
             <Pagination.Prev
@@ -46,8 +76,8 @@ const Stock = ({ total, stocks }) => {
                 let cursor = 4 * page;
                 setPage(page - 1);
                 console.log(cursor - 4, cursor);
-                setList(stocks.slice(cursor - 4, cursor));
-                window.scrollTo(0,0);
+                setList(fullList.slice(cursor - 4, cursor));
+                window.scrollTo(0, 0);
               }}
             />
             <Pagination.Item className={styles.currPage}>
@@ -59,7 +89,7 @@ const Stock = ({ total, stocks }) => {
                 e.preventDefault();
                 let cursor = 4 * page;
                 setPage(page + 1);
-                setList(stocks.slice(cursor, cursor + 4));
+                setList(fullList.slice(cursor, cursor + 4));
                 window.scrollTo(0, 0);
               }}
             />
@@ -68,7 +98,7 @@ const Stock = ({ total, stocks }) => {
                 e.preventDefault();
                 let cursor = 4 * (totalPages - 1);
                 setPage(totalPages);
-                setList(stocks.slice(cursor));
+                setList(fullList.slice(cursor));
                 window.scrollTo(0, 0);
               }}
             />
@@ -79,16 +109,17 @@ const Stock = ({ total, stocks }) => {
             <Row className={styles.sort_sec}>
               <h5>Sort</h5>
               <div>
-                {sort === "Name" ? (
+                {sort === "name" ? (
                   <>
                     {sortBy === 0 ? (
                       <Button
                         className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                        onClick={(e) => {
+                        onClick={async (e) => {
                           let by = sortBy === 0 ? 1 : 0;
                           e.preventDefault();
                           setSortBy(by);
-                          setSort("Name");
+                          setSort("name");
+                          await updateStocks("name", by, risk);
                         }}
                       >
                         Name &uarr;{" "}
@@ -96,11 +127,12 @@ const Stock = ({ total, stocks }) => {
                     ) : (
                       <Button
                         className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
-                        onClick={(e) => {
+                        onClick={async (e) => {
                           let by = sortBy === 0 ? 1 : 0;
                           e.preventDefault();
                           setSortBy(by);
-                          setSort("Name");
+                          setSort("name");
+                          await updateStocks("name", by, risk);
                         }}
                       >
                         Name &darr;{" "}
@@ -110,25 +142,27 @@ const Stock = ({ total, stocks }) => {
                 ) : (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
                       setSortBy(0);
-                      setSort("Name");
+                      setSort("name");
+                      await updateStocks("name", 0, risk);
                     }}
                   >
                     Name &uarr;{" "}
                   </Button>
                 )}
-                {sort === "Cap" ? (
+                {sort === "marketCap" ? (
                   <>
                     {sortBy === 0 ? (
                       <Button
                         className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                        onClick={(e) => {
+                        onClick={async (e) => {
                           let by = sortBy === 0 ? 1 : 0;
                           e.preventDefault();
                           setSortBy(by);
-                          setSort("Cap");
+                          setSort("marketCap");
+                          await updateStocks("marketCap", by, risk);
                         }}
                       >
                         Market Cap &uarr;{" "}
@@ -136,11 +170,12 @@ const Stock = ({ total, stocks }) => {
                     ) : (
                       <Button
                         className={`${styles.btn} ${styles.sort_btn}  ${styles.active}`}
-                        onClick={(e) => {
+                        onClick={async (e) => {
                           let by = sortBy === 0 ? 1 : 0;
                           e.preventDefault();
                           setSortBy(by);
-                          setSort("Cap");
+                          setSort("marketCap");
+                          await updateStocks("marketCap", by, risk);
                         }}
                       >
                         Market Cap &darr;{" "}
@@ -150,10 +185,11 @@ const Stock = ({ total, stocks }) => {
                 ) : (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
                       setSortBy(0);
-                      setSort("Cap");
+                      setSort("marketCap");
+                      await updateStocks("marketCap", 0, risk);
                     }}
                   >
                     Market Cap &uarr;
@@ -165,12 +201,14 @@ const Stock = ({ total, stocks }) => {
             <Row className={styles.filter_sec}>
               <h5>Filter by Risk</h5>
               <div>
-                {risk === "Low" ? (
+                {risk === "low" ? (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
                       setRisk("");
+                      let r = risk === "low" ? "" : risk;
+                      await updateStocks(sort, sortBy, r);
                     }}
                   >
                     Low
@@ -178,20 +216,23 @@ const Stock = ({ total, stocks }) => {
                 ) : (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
-                      setRisk("Low");
+                      setRisk("low");
+                      await updateStocks(sort, sortBy, "low");
                     }}
                   >
                     Low
                   </Button>
                 )}
-                {risk === "Medium" ? (
+                {risk === "medium" ? (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
                       setRisk("");
+                      let r = risk === "medium" ? "" : risk;
+                      await updateStocks(sort, sortBy, r);
                     }}
                   >
                     Medium
@@ -199,20 +240,23 @@ const Stock = ({ total, stocks }) => {
                 ) : (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
-                      setRisk("Medium");
+                      setRisk("medium");
+                      await updateStocks(sort, sortBy, "medium");
                     }}
                   >
                     Medium
                   </Button>
                 )}
-                {risk === "High" ? (
+                {risk === "high" ? (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn} ${styles.active}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
                       setRisk("");
+                      let r = risk === "high" ? "" : risk;
+                      await updateStocks(sort, sortBy, r);
                     }}
                   >
                     High
@@ -220,9 +264,10 @@ const Stock = ({ total, stocks }) => {
                 ) : (
                   <Button
                     className={`${styles.btn} ${styles.sort_btn}`}
-                    onClick={(e) => {
+                    onClick={async (e) => {
                       e.preventDefault();
-                      setRisk("High");
+                      setRisk("high");
+                      await updateStocks(sort, sortBy, "high");
                     }}
                   >
                     High
@@ -240,24 +285,23 @@ const Stock = ({ total, stocks }) => {
 export default Stock;
 
 export const getServerSideProps = async () => {
-
   let uri = `${server}/api/companies`;
   let response = await fetch(uri, {
     method: "POST",
     body: JSON.stringify({
       sort: "name",
-      reverse: false
-    })
-  })
+      reverse: false,
+    }),
+  });
 
   let { data, err } = await response.json();
   if (err) {
     return {
       props: {
         total: 0,
-        stocks: []
-      }
-    }
+        stocks: [],
+      },
+    };
   }
 
   let total = data.length;
