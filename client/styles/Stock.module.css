@@ -61,11 +61,19 @@
   font-weight: 600;
 }
 
-.btn {
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
   padding: 5px 20px;
   border-radius: 5px;
-  background: #f54748;
-  border: none;
-  color: #fff;
+  background: #f54748 !important;
+  border: none !important;
+  color: #fff !important;
   font-weight: 600;
+}
+
+.currPage a {
+    background-color: #fdc55e !important;
+    color: #fff !important;
 }

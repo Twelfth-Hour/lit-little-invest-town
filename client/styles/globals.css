@@ -20,7 +20,8 @@ body {
   font-size: 13px !important;
 }
 
-input {
+input,
+button {
   outline: 0 !important;
   transition: none !important;
 }
@@ -31,6 +32,25 @@ input:active {
   box-shadow: none !important;
 }
 
+button:hover,
+button:focus,
+button:active {
+  box-shadow: none !important;
+}
+
 p {
   margin-bottom: 0 !important;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page-link {
+  color: #fdc55e !important;
+  border-color: #fdc55e !important;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d !important;
 }
