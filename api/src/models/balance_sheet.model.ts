@@ -2,11 +2,10 @@ import {
   DataTypes,
   HasOneGetAssociationMixin,
   HasOneSetAssociationMixin,
-  // HasOneGetAssociationMixin,
-  // HasOneSetAssociationMixin,
   Model,
   Optional,
 } from "sequelize";
+import { BalanceSheetDAO } from "../dao/balance_sheet.dao";
 import sequelize from "../db";
 import Company from "./company.model";
 
@@ -51,6 +50,23 @@ class BalanceSheet
 
   public getCompany!: HasOneGetAssociationMixin<Company>;
   public setCompany!: HasOneSetAssociationMixin<Company, number>;
+
+  public toDAO(): BalanceSheetDAO {
+    return {
+      year: this.year,
+      current_assets: this.current_assets,
+      cash: this.cash,
+      receivables: this.receivables,
+      inventory: this.inventory,
+      non_current_assets: this.non_current_assets,
+      loan: this.loan,
+      equipment: this.equipment,
+      goodwill: this.goodwill,
+      long_term_investment: this.long_term_investment,
+      total_assets: this.total_assets,
+      long_term_debts: this.long_term_debts,
+    };
+  }
 }
 
 BalanceSheet.init(

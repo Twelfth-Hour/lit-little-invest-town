@@ -10,6 +10,7 @@ import {
 import { CompanyDAO } from "../dao/company.dao";
 import sequelize from "../db";
 import BalanceSheet from "./balance_sheet.model";
+import IncomeStatement from "./income_statement.model";
 
 interface CompanyAttributes {
   id: number;
@@ -42,6 +43,12 @@ class Company
 
   public getBalanceSheets!: HasManyGetAssociationsMixin<BalanceSheet>;
   public addBalanceSheet!: HasManyAddAssociationMixin<BalanceSheet, number>;
+
+  public getIncomeStatements!: HasManyGetAssociationsMixin<IncomeStatement>;
+  public addIncomeStatement!: HasManyAddAssociationMixin<
+    IncomeStatement,
+    number
+  >;
 
   public toDAO(): CompanyDAO {
     return {
@@ -94,5 +101,8 @@ Company.init(
 
 Company.hasMany(BalanceSheet);
 BalanceSheet.belongsTo(Company);
+
+Company.hasMany(IncomeStatement);
+IncomeStatement.belongsTo(Company);
 
 export default Company;
