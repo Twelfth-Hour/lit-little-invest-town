@@ -9,7 +9,8 @@ import Avatar from "boring-avatars";
 
 const Detail = ({ stock, similar }) => {
   /* eslint-disable no-unused-vars */
-  const [currPrice, setCurr] = useState(stock.currPrice);
+  const [present, setPresent] = useState(false);
+  const [list_, setList] = useState([]);
   const [profile, setProfile] = useState("");
   const isLetter = (c) => {
     return c.toLowerCase() != c.toUpperCase();
@@ -54,22 +55,36 @@ const Detail = ({ stock, similar }) => {
   useEffect(() => {
     let name = getName(stock.symbol);
     setProfile(name);
+
+    let lis_ = localStorage.getItem("plan");
+    if (lis_ !== undefined && lis_ !== null) {
+      let list_temp = JSON.parse(lis_);
+      setList(list_temp);
+      let length = list_temp.length;
+      for (let i = 0; i < length; ++i) {
+        let sym = list_temp[i].symbol;
+        if (sym === stock.symbol) {
+          setPresent(true);
+          break;
+        }
+      }
+    }
   }, []);
 
-  setInterval(async () => {
-    let key = stock.symbol;
-    let response = await fetch(`${server}/api/stock_price`, {
-      method: "POST",
-      body: key,
-    });
+  // setInterval(async () => {
+  //   let key = stock.symbol;
+  //   let response = await fetch(`${server}/api/stock_price`, {
+  //     method: "POST",
+  //     body: key,
+  //   });
 
-    let { data, err } = await response.json();
-    let price = 0;
-    if (data) price = data;
-    if (price !== 0) {
-      setCurr(price);
-    }
-  }, 30 * 60 * 1000);
+  //   let { data, err } = await response.json();
+  //   let price = 0;
+  //   if (data) price = data;
+  //   if (price !== 0) {
+  //     setCurr(price);
+  //   }
+  // }, 30 * 60 * 1000);
 
   /* eslint-enable no-unused-vars */
   return (
@@ -186,6 +201,45 @@ const Detail = ({ stock, similar }) => {
               <span>Insights</span>
               <div className={styles.triangle_left}></div>
             </div>
+            {!present ? (
+              <a
+                style={{ cursor: "pointer" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  list_.push(stock);
+                  localStorage.setItem("plan", JSON.stringify(list_));
+                  setList(list_);
+                  setPresent(true);
+                }}
+              >
+                <div
+                  className={styles.insight_title}
+                  style={{ background: "#009900", borderRadius: "5px" }}
+                >
+                  <span>Add to Plan </span>
+                </div>
+              </a>
+            ) : (
+              <a
+                style={{ cursor: "pointer" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  let list_new = list_.filter(
+                    (item) => item.symbol !== stock.symbol
+                  );
+                  localStorage.setItem("plan", JSON.stringify(list_new));
+                  setList(list_new);
+                  setPresent(false);
+                }}
+              >
+                <div
+                  className={styles.insight_title}
+                  style={{ background: "#9B0100", borderRadius: "5px" }}
+                >
+                  <span>Remove from Plan</span>
+                </div>
+              </a>
+            )}
           </Col>
           <Col className={styles.insight_container}>
             <div>

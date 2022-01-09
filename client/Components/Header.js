@@ -46,6 +46,9 @@ const Header = () => {
               />
               <Button className={styles.search_btn}>Search</Button>
             </InputGroup> */}
+            <Nav.Link href={`/plan`} className={styles.link}>
+              Personal Plan
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
