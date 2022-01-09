@@ -7,11 +7,11 @@
 
 Stock markets are hard to analyze and there has been a surge in the number of people starting to invest in the markets. Stock markets are liquid, available on mobile, good returns.
 
-Not each user comes from a finanical background and it is harder to understand the figures present within the income and balance sheet. This is one of the reasons why individual constraint themselves from investing in stock market.
+Not each user comes from a financial background and it is harder to understand the figures present within the income and balance sheet. This is one of the reasons why individuals constraint themselves from investing in the stock market.
 
 # Solution
 
-To make it easy to invest in stock market, LIT provides the list of companies listed in the stock market and scale down company profiles and map them to individual financial profiles such that it is understood by any individual.
+To make it easy to invest in the stock market, LIT provides the list of companies listed in the stock market and scale down company profiles and map them to individual financial profiles such that it is understood by any individual.
 
 ```
 💡 Starbucks Coffee at Rs 20, Brand New iPhone at Rs 10K ⇒ Good Buy
