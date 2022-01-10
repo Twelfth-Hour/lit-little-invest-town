@@ -25,7 +25,10 @@ const Header = () => {
             {/* <Nav.Link href={`/lit-api`} className={styles.link}>
               Developers
             </Nav.Link> */}
-            <Nav.Link href={`/#how_works`} className={styles.link}>
+            <Nav.Link
+              href={`/#how_works`}
+              className={`${styles.link} ${styles.bold}`}
+            >
               How LIT Works
             </Nav.Link>
           </Nav>

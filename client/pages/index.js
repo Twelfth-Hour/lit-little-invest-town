@@ -18,16 +18,17 @@ export default function Home() {
         <Col>
           <Row className={styles.heading}>
             <p>
-              Analyze stocks as easily as buying a coffee.{" "}
+              Analyze Indian stocks as easily as buying a coffee.{" "}
               <span className={styles.highlight}>LITerally!</span>
             </p>
           </Row>
           <Row className={styles.text}>
-            <span>
-              <span className={styles.highlight}>Little Invest Town</span> maps
-              complex stock price data to an everyday scale that the result of
-              us can understand. Do not keep yourself waiting and improvise your
-              decision making in the world of stocks
+            <span style={{ fontSize: "1.25rem" }}>
+              <span className={styles.highlight}>Little Invest Town</span>{" "}
+              transforms complicated financial statements of companies into an
+              imaginary {"character's"} personal finances. {"It's"} easier to
+              analyse personal finances than that of businesses. No Sign Up
+              Required.
             </span>
           </Row>
           <Row>
@@ -115,6 +116,10 @@ export default function Home() {
             <span style={{ fontSize: "1.25rem", marginBottom: "0.75rem" }}>
               📌 &nbsp; LIT simplifies decision making while buying shares for
               people with a non-finance background
+            </span>
+            <span style={{ fontSize: "1.25rem", marginBottom: "0.75rem" }}>
+              📌 &nbsp; Add stocks you like to your personal plan (saved
+              locally)
             </span>
           </Row>
         </Col>
