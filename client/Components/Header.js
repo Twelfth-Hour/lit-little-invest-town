@@ -52,6 +52,12 @@ const Header = () => {
             <Nav.Link href={`/plan`} className={styles.link}>
               Personal Plan
             </Nav.Link>
+            <Nav.Link
+              href="https://github.com/Twelfth-Hour/lit-little-invest-town"
+              className={styles.link}
+            >
+              <img src="/github.svg" />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
